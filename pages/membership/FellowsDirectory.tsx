@@ -41,7 +41,7 @@ const FellowsDirectory: React.FC = () => {
   };
 
   return (
-    <div className="pt-20 px-6 max-w-7xl mx-auto pb-40 relative">
+    <div className="pt-28 px-6 max-w-7xl mx-auto pb-40 relative overflow-hidden">
       <div className="absolute top-0 left-0 p-20 opacity-[0.02] pointer-events-none select-none overflow-hidden">
         <span className="text-[30rem] font-serif-vintage italic">Sajjana</span>
       </div>
