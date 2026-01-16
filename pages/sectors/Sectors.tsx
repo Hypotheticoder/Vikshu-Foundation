@@ -52,7 +52,7 @@ const Sectors: React.FC = () => {
       icon: <Sparkles />, 
       desc: "We do not uplift hands.We strengthen spines", 
       color: "from-purple-600/30",
-      image: "url(/assets/selfEmpowerment.jpeg)",
+      image: "/assets/selfEmpowerment.jpeg",
       className: "md:col-span-2 md:row-span-1"
     }
   ];
