@@ -96,7 +96,7 @@ const Home: React.FC = () => {
           sanskrit="सत्यमेव जयते"
           quote="Truth does not need noise to prevail. It endures, quietly, until it is remembered."
           author="A Vikshu Heritage Reflection"
-          image="public/assets/netaji.jpeg"
+          image="/assets/netaji.jpeg"
         />
 
         {/* Manifesto Section */}
