@@ -27,6 +27,7 @@ const SectorCard: React.FC<SectorCardProps> = ({ title, icon, desc, color, image
             src={image} 
             alt={title} 
             className="w-full h-full object-cover grayscale brightness-[0.2] group-hover:grayscale-0 group-hover:brightness-[0.4] transition-all duration-1000 scale-110 group-hover:scale-100" 
+            style={{ objectPosition: 'center 10%' }}
           />
           <div className={`absolute inset-0 bg-gradient-to-br ${color} mix-blend-multiply opacity-50`}></div>
           <div className="absolute inset-0 vintage-paper opacity-5 mix-blend-overlay"></div>

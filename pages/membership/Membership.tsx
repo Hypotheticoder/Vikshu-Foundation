@@ -245,9 +245,9 @@ const Membership: React.FC = () => {
       </div>
 
       <QuoteBlock 
-        quote="If you're lucky enough to be different, never change. I've found that growing up means finding a path that only you can walk."
-        author="Taylor Swift"
-        image="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Taylor_Swift_at_the_2023_MTV_Video_Music_Awards_4.jpg/800px-Taylor_Swift_at_the_2023_MTV_Video_Music_Awards_4.jpg"
+        quote="Not to follow one voice, but to walk together without losing one’s own path, is the essence of true fellowship."
+        author="A Vikshu Reflection"
+        image="https://www.meisterdrucke.uk/kunstwerke/1260px/Chinese_School_-_Lao-Tzu_%28c604-531%29_on_his_buffalo_followed_by_a_disciple_%28wc_on_paper%29_-_%28MeisterDrucke-420939%29.jpg"
         sanskrit="संगच्छध्वं संवदध्वम्"
       />
     </div>

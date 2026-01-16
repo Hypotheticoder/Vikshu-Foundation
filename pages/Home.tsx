@@ -39,8 +39,14 @@ const Home: React.FC = () => {
         >
           <div className="inline-flex items-center gap-4 px-6 py-2 glass rounded-full border border-amber-600/20 mb-10">
             <Sparkles size={14} className="text-amber-500 animate-spin-slow" />
-            <span className="text-amber-500 font-heading tracking-[0.4em] text-[10px] uppercase italic">Atta-dīpā viharatha — Be your own light</span>
+            <div className="flex flex-col">
+              <span className="text-amber-500 font-heading text-[10px]">जो शून्य है, वही पूर्ण है</span>
+              <span className="text-amber-300 text-[10px] italic">Vikshu does not aim to fill lives with noise, possessions, or urgency. It begins where excess ends.</span>
+            </div>
           </div>
+          <p className="text-sm md:text-lg text-amber-400 italic mb-6">
+            Vikshu (भिक्षु) - One who seeks not for themselves, but for the collective enlightenment of humanity.
+          </p>
           
           <h1 className="text-7xl md:text-[14rem] font-serif-vintage italic mb-12 leading-[0.8] tracking-tighter">
             The <span className="text-amber-600">Great</span><br/>
@@ -88,9 +94,9 @@ const Home: React.FC = () => {
         <QuoteBlock 
           className="mt-40"
           sanskrit="सत्यमेव जयते"
-          quote="The people who are crazy enough to think they can change the world are the ones who do."
-          author="Steve Jobs"
-          image="https://upload.wikimedia.org/wikipedia/commons/d/dc/Steve_Jobs_Headshot_2010-edit.jpg"
+          quote="Truth does not need noise to prevail. It endures, quietly, until it is remembered."
+          author="A Vikshu Heritage Reflection"
+          image="assets/images/netaji.jpeg"
         />
 
         {/* Manifesto Section */}

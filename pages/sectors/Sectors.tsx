@@ -10,7 +10,7 @@ const Sectors: React.FC = () => {
     { 
       title: "Education", 
       icon: <BookOpen />, 
-      desc: "Preserving sacred knowledge systems while embracing modern Montessori pedagogy for future leaders.", 
+      desc: "संस्कारः शिक्षायाः मूलम् Education is not information. It is the shaping of awareness", 
       color: "from-amber-600/30",
       image: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=1200",
       className: "md:col-span-2 md:row-span-1"
@@ -18,7 +18,7 @@ const Sectors: React.FC = () => {
     { 
       title: "Spiritual Life", 
       icon: <Moon />, 
-      desc: "Vedic astrology, meditation retreats, and cosmic harmony for the modern seeker.", 
+      desc: "तारा न भाग्यं निर्णेतुं। ते चिंतनं आमंत्रयन्ति। Stars do not decide fate.They invite reflection.", 
       color: "from-indigo-600/30",
       image: "https://images.unsplash.com/photo-1528319725582-ddc096101511?q=80&w=1200",
       className: "md:col-span-1 md:row-span-2"
@@ -26,7 +26,7 @@ const Sectors: React.FC = () => {
     { 
       title: "Shelter", 
       icon: <HomeIcon />, 
-      desc: "Dignified living through heritage-conscious social housing and restoration of ancestral ghats.", 
+      desc: "निवासः केवलं भित्तिः न भवति A shelter is not walls.It is dignity made visible.", 
       color: "from-amber-900/30",
       image: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?q=80&w=1200",
       className: "md:col-span-1 md:row-span-1"
@@ -34,7 +34,7 @@ const Sectors: React.FC = () => {
     { 
       title: "Innovation", 
       icon: <Zap />, 
-      desc: "AI-driven translation of rare palm leaf manuscripts and digital heritage preservation.", 
+      desc: "Innovation is tradition that learned to adapt.", 
       color: "from-blue-600/30",
       image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200",
       className: "md:col-span-1 md:row-span-1"
@@ -42,7 +42,7 @@ const Sectors: React.FC = () => {
     { 
       title: "Health", 
       icon: <Activity />, 
-      desc: "Holistic wellness combining ancient Ayurveda with modern bio-innovation and medical aid.", 
+      desc: "Health is harmony between body, mind, and environment.", 
       color: "from-green-600/30",
       image: "https://images.unsplash.com/photo-1505751172107-5739a00943d5?q=80&w=1200",
       className: "md:col-span-1 md:row-span-1"
@@ -50,9 +50,9 @@ const Sectors: React.FC = () => {
     { 
       title: "Self Empowerment", 
       icon: <Sparkles />, 
-      desc: "Vocational training and spiritual leadership programs for marginalized communities.", 
+      desc: "We do not uplift hands.We strengthen spines", 
       color: "from-purple-600/30",
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200",
+      image: "assets/images/selfEmpowerment.jpeg",
       className: "md:col-span-2 md:row-span-1"
     }
   ];
@@ -80,18 +80,11 @@ const Sectors: React.FC = () => {
       </div>
 
       <div className="space-y-12">
-        <QuoteBlock 
-          quote="One child, one teacher, one book, one pen can change the world."
-          author="Malala Yousafzai"
-          image="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Malala_Yousafzai_2015.jpg/800px-Malala_Yousafzai_2015.jpg"
-          variant="glass"
-          imagePosition="left"
-        />
-        <QuoteBlock 
-          quote="Innovation distinguishes between a leader and a follower. I'd rather be optimistic and wrong than pessimistic and right."
-          author="Elon Musk"
-          image="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Elon_Musk_Royal_Society_crop.jpg/800px-Elon_Musk_Royal_Society_crop.jpg"
-          sanskrit="ज्ञानं परमं बलम्"
+        <QuoteBlock
+          quote="Be thankful for what you have; you'll end up having more. If you concentrate on what you don't have, you will never, ever have enough."
+          author="From the Vikshu Lineage"
+          variant="paper"
+          className="text-amber-600"
         />
       </div>
     </div>

@@ -153,9 +153,10 @@ const FellowsDirectory: React.FC = () => {
       <div className="mt-40">
         <QuoteBlock 
           sanskrit="विद्या ददाति विनयं"
-          quote="Specific knowledge is found by pursuing your genuine curiosity and passion rather than whatever is hot right now. Find what feels like play to you, but looks like work to others."
-          author="Naval Ravikant"
-          variant="glass"
+          quote="Knowledge is not inherited by ambition, but by humility practiced over time."
+          author="From the Vikshu Lineage"
+          variant="paper"
+          className="text-amber-600"
         />
       </div>
     </div>

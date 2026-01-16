@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import bgManuscript from '../../assets/images/background.png';
 
 interface QuoteBlockProps {
   quote: string;
@@ -32,6 +33,7 @@ const QuoteBlock: React.FC<QuoteBlockProps> = ({
         opacity: { duration: 0.8 }
       }}
       className={`${variant === 'paper' ? 'vintage-paper text-amber-950 border-amber-900/20' : 'glass text-white border-white/10'} p-8 md:p-20 rounded-[3rem] border shadow-2xl relative overflow-hidden ${className}`}
+      style={variant === 'paper' ? { backgroundImage: `url(${bgManuscript})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' } : undefined}
     >
       <div className="absolute top-0 right-0 opacity-[0.03] pointer-events-none select-none">
         <span className="text-[12rem] font-serif-vintage italic">"</span>

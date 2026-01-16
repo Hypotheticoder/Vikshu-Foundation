@@ -188,8 +188,9 @@ const FellowshipEnrollment: React.FC = () => {
       <div className="mt-40">
         <QuoteBlock 
           sanskrit="सत्यं वद धर्मं चर"
-          quote="Success isn't about how much money you make; it's about the difference you make in people's lives. Your story is what you have, what you will always have."
-          author="Michelle Obama"
+          quote="Induction is not an arrival. It is consent to live with greater responsibility."
+          author="From the Vikshu Induction"
+          image="https://s.france24.com/media/display/ae535f68-091f-11e9-b2e4-005056a964fe/w%3A1280/p%3A4x3/10122014-malala-nobel-prize.jpg"
           variant="paper"
         />
       </div>

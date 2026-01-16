@@ -221,14 +221,8 @@ const Support: React.FC = () => {
 
         <div className="space-y-12">
           <QuoteBlock 
-            quote="Be thankful for what you have; you'll end up having more. If you concentrate on what you don't have, you will never, ever have enough."
-            author="Oprah Winfrey"
-            image="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Oprah_Winfrey_at_2011_TCA.jpg/800px-Oprah_Winfrey_at_2011_TCA.jpg"
-            variant="glass"
-          />
-          <QuoteBlock 
-            quote="Be humble. Be hungry. And always be the hardest worker in the room. Success isn't always about greatness, it's about consistency."
-            author="Dwayne Johnson"
+            quote="Support begins when one is heard without being judged or hurried.."
+            author="A Vikshu Reflection"
             sanskrit="श्रम एव जयते"
             variant="paper"
           />
