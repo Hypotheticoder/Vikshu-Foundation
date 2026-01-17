@@ -27,8 +27,8 @@ const Donations: React.FC = () => {
         const el = formRef.current;
         if (!el) return;
         const rect = el.getBoundingClientRect();
-          const navEl = document.querySelector('nav');
-          const headerOffset = navEl ? Math.round(navEl.getBoundingClientRect().height) +   96 : 72; // dynamic header height fallback
+        const navEl = document.querySelector('nav');
+        const headerOffset = navEl ? Math.round(navEl.getBoundingClientRect().height) +  96 : 22; // dynamic header height fallback
         const target = window.scrollY + rect.top - headerOffset;
         window.scrollTo({ top: Math.max(0, target), behavior: 'smooth' });
       }, 120);
