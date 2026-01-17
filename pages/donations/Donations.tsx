@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ShieldOff, Heart, Coins, Info, ArrowRight, CheckCircle2, Sparkles, HandHeart, Star, Vote, Shield, Award, Building, Check, Scale, Briefcase, CheckSquare } from 'lucide-react';
 import QuoteBlock from '../../components/ui/QuoteBlock';
@@ -16,6 +16,24 @@ const Donations: React.FC = () => {
   ];
 
   const presets = ['50', '100', '500', '1000', '5000'];
+
+  const formRef = useRef<HTMLFormElement | null>(null);
+
+  const handleSelectType = (id: 'general' | 'corpus' | 'anonymous') => {
+    setActiveTab(id);
+    if (typeof window !== 'undefined' && window.innerWidth < 1024) {
+      // Allow layout/animations to start, then scroll with an offset
+      setTimeout(() => {
+        const el = formRef.current;
+        if (!el) return;
+        const rect = el.getBoundingClientRect();
+          const navEl = document.querySelector('nav');
+          const headerOffset = navEl ? Math.round(navEl.getBoundingClientRect().height) +   96 : 72; // dynamic header height fallback
+        const target = window.scrollY + rect.top - headerOffset;
+        window.scrollTo({ top: Math.max(0, target), behavior: 'smooth' });
+      }, 120);
+    }
+  };
 
   const membershipTiers = [
     {
@@ -104,12 +122,12 @@ const Donations: React.FC = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 relative z-10 mb-32">
         {/* Selection Sidebar */}
-        <div className="lg:col-span-4 space-y-4">
+          <div className="lg:col-span-4 space-y-4">
           <h3 className="text-[10px] uppercase tracking-[0.4em] font-bold text-gray-500 mb-6 px-4">Offering Modality</h3>
           {donationTypes.map((type) => (
             <button
               key={type.id}
-              onClick={() => setActiveTab(type.id as any)}
+              onClick={() => handleSelectType(type.id as any)}
               className={`w-full text-left p-8 rounded-[2.5rem] transition-all border flex flex-col gap-4 relative overflow-hidden group ${
                 activeTab === type.id 
                   ? 'bg-amber-600/10 border-amber-600/50 shadow-2xl shadow-amber-900/10' 
@@ -153,7 +171,7 @@ const Donations: React.FC = () => {
                 </div>
               </div>
 
-              <form onSubmit={handleSubmit} className="space-y-10 flex-grow">
+              <form ref={formRef} onSubmit={handleSubmit} className="space-y-10 flex-grow">
                 <div className="space-y-6">
                   <label className="text-[10px] uppercase tracking-widest text-amber-500 font-bold ml-1">Thy Bounty (USD)</label>
                   <div className="grid grid-cols-5 gap-3">
