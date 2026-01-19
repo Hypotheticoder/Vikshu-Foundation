@@ -324,7 +324,7 @@ const Donations: React.FC = () => {
           variant="paper"
           quote="What is offered without attachment remains useful beyond its giver."
           author="A Vikshu Reflection"
-          image="public/assets/donation.png"
+          image="/assets/donation.png"
         />
         <div className="glass p-12 rounded-[4rem] border border-white/10 flex flex-col justify-center">
           <h4 className="text-[10px] uppercase tracking-[0.5em] font-bold text-amber-500 mb-8">Direct Endowment</h4>
