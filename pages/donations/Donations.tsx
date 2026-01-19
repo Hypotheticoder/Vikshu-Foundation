@@ -321,10 +321,10 @@ const Donations: React.FC = () => {
 
       <div className="mt-40 grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10">
         <QuoteBlock 
-          variant="glass"
-          quote="If you're in the luckiest 1% of humanity, you owe it to the rest of humanity to think about the other 99%."
-          author="Warren Buffett"
-          image="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit.jpg/800px-Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit.jpg"
+          variant="paper"
+          quote="What is offered without attachment remains useful beyond its giver."
+          author="A Vikshu Reflection"
+          image="public/assets/donation.png"
         />
         <div className="glass p-12 rounded-[4rem] border border-white/10 flex flex-col justify-center">
           <h4 className="text-[10px] uppercase tracking-[0.5em] font-bold text-amber-500 mb-8">Direct Endowment</h4>

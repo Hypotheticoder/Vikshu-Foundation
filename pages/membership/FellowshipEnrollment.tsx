@@ -190,7 +190,7 @@ const FellowshipEnrollment: React.FC = () => {
           sanskrit="सत्यं वद धर्मं चर"
           quote="Induction is not an arrival. It is consent to live with greater responsibility."
           author="From the Vikshu Induction"
-          image="https://s.france24.com/media/display/ae535f68-091f-11e9-b2e4-005056a964fe/w%3A1280/p%3A4x3/10122014-malala-nobel-prize.jpg"
+          image="public/assets/induction.png"
           variant="paper"
         />
       </div>
