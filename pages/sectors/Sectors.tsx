@@ -44,7 +44,7 @@ const Sectors: React.FC = () => {
       icon: <Activity />, 
       desc: "Health is harmony between body, mind, and environment.", 
       color: "from-green-600/30",
-      image: "https://images.unsplash.com/photo-1505751172107-5739a00943d5?q=80&w=1200",
+      image: "/assets/sector_health.png",
       className: "md:col-span-1 md:row-span-1"
     },
     { 

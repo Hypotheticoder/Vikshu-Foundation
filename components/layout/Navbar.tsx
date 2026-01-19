@@ -46,8 +46,8 @@ const Navbar: React.FC<NavbarProps> = ({ isAuthenticated, setIsAuthenticated }) 
           <div className="w-10 h-10 bg-amber-600 rounded-full flex items-center justify-center text-black font-bold text-xl font-heading transition-transform group-hover:scale-110">
             V
           </div>
-          <span className="font-heading text-lg md:text-xl tracking-[0.3em] hidden sm:block">
-            VIKSHU
+          <span className="font-heading text-sm sm:text-lg md:text-xl tracking-[0.25em] block">
+          VIKSHU
           </span>
         </Link>
 
