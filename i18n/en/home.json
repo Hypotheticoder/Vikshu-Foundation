@@ -1,0 +1,60 @@
+{
+  "tagline_sanskrit": "What is empty, that is full",
+  "tagline_description": "Vikshu does not seek to add more to life. It begins where excess ends.",
+
+  "intro": "Vikshu — seekers of truth and wisdom for the collective good.",
+
+  "hero": {
+    "line1": "Great",
+    "internal": "Internal",
+    "line2": "Gaze"
+  },
+
+  "hero_quote": "We provide the sacred scaffolding for the soul's architectural expansion. Discover the lineage of truth within.",
+
+  "cta_explore": "Explore Pillars",
+  "cta_request": "Request Induction",
+
+  "metrics": {
+    "ghats": "Ancient Ghats",
+    "scholars": "Scholars Inducted",
+    "archives": "Archive Volumes",
+    "chapters": "Global Chapters"
+  },
+
+  "manifesto_title": "The Vikshu Manifesto",
+
+  "manifesto": {
+    "p1_title": "Sacred Preservation",
+    "p1_text": "Heritage is not a static museum, but a living resonance. We bridge civic duty with eternal essence.",
+
+    "p2_title": "Radical Autonomy",
+    "p2_text": "Every seeker is their own light. We provide mentorship and tools; the path is yours.",
+
+    "p3_title": "Technological Alchemy",
+    "p3_text": "AI and ancient manuscripts are partners in the grand alchemy of memory. We use modern tools to unlock archaic whispers."
+  },
+
+  "archive_title": "Archived Works",
+  "archive_subtitle": "Recent work from our partners and research teams.",
+  "quote": {
+    "sanskrit": "Satyameva Jayate",
+    "text": "Truth does not need noise to prevail. It endures, quietly, until it is remembered.",
+    "author": "A Vikshu Heritage Reflection"
+  },
+
+  "fellowship": {
+    "title": "Join the Fellowship",
+    "subtitle": "Contribute to the preservation of knowledge",
+    "global": "Global Fellowship",
+    "global_desc": "Connected in intent, diverse in action.",
+    "integrity": "Internal Integrity",
+    "integrity_desc": "Verified by character, not just credentials"
+  },
+
+  "welcome": {
+    "greeting": "Welcome to Vikshu Foundation",
+    "message": "We are honored to have you here. Vikshu is a sacred space dedicated to preserving global heritage and fostering collective enlightenment. May your journey with us be one of wisdom and inner discovery.",
+    "continue": "Begin Your Journey"
+  }
+}
