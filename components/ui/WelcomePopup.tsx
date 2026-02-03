@@ -48,7 +48,7 @@ const WelcomePopup: React.FC = () => {
           ease: [0.22, 1, 0.36, 1],
           delay: 0.1,
         }}
-        className="relative glass rounded-[4rem] border border-amber-500/40 shadow-2xl max-w-4xl w-full overflow-hidden"
+        className="relative glass rounded-2xl sm:rounded-[4rem] border border-amber-500/40 shadow-2xl max-w-4xl w-full overflow-hidden"
         style={{ perspective: "1000px" }}
       >
         {/* Multiple decorative gradients */}
@@ -66,14 +66,14 @@ const WelcomePopup: React.FC = () => {
           whileHover={{ scale: 1.1, rotate: 90 }}
           whileTap={{ scale: 0.9 }}
           onClick={handleCloseWelcome}
-          className="absolute top-6 right-6 z-50 w-12 h-12 rounded-full glass border border-amber-500/30 flex items-center justify-center text-amber-500 hover:text-white hover:bg-amber-600/50 transition-all shadow-lg"
+          className="absolute top-3 right-3 sm:top-6 sm:right-6 z-50 w-10 h-10 sm:w-12 sm:h-12 rounded-full glass border border-amber-500/30 flex items-center justify-center text-amber-500 hover:text-white hover:bg-amber-600/50 transition-all shadow-lg"
           aria-label="Close welcome popup"
         >
-          <X size={24} />
+          <X size={20} className="sm:w-6 sm:h-6" />
         </motion.button>
 
-        <div className="relative p-8 md:p-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="relative p-4 sm:p-8 md:p-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 items-center">
             {/* LEFT SIDE - Enhanced Image Section */}
             <motion.div
               initial={{ opacity: 0, x: -50, scale: 0.9 }}
@@ -97,7 +97,7 @@ const WelcomePopup: React.FC = () => {
                     repeat: Infinity,
                     ease: "easeInOut",
                   }}
-                  className="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-r from-amber-500/40 to-amber-600/40 rounded-full blur-3xl"
+                  className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 bg-gradient-to-r from-amber-500/40 to-amber-600/40 rounded-full blur-3xl"
                 ></motion.div>
               </div>
 
@@ -119,7 +119,7 @@ const WelcomePopup: React.FC = () => {
                 ></motion.div>
 
                 {/* Image container */}
-                <div className="relative w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden border-8 border-amber-500/50 shadow-2xl shadow-amber-900/50 bg-gradient-to-br from-amber-900/20 to-amber-600/20">
+                <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-96 md:h-96 rounded-full overflow-hidden border-4 sm:border-8 border-amber-500/50 shadow-2xl shadow-amber-900/50 bg-gradient-to-br from-amber-900/20 to-amber-600/20">
                   <motion.img
                     initial={{ scale: 1.2, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
@@ -167,7 +167,7 @@ const WelcomePopup: React.FC = () => {
                 className="mt-8 text-center"
               >
                 <motion.h3
-                  className="text-4xl md:text-5xl font-serif-vintage italic text-amber-500 mb-2 drop-shadow-lg"
+                  className="text-2xl sm:text-4xl md:text-5xl font-serif-vintage italic text-amber-500 mb-2 drop-shadow-lg"
                   whileHover={{ scale: 1.05 }}
                 >
                   Aheli Pramanik
@@ -178,7 +178,7 @@ const WelcomePopup: React.FC = () => {
                   transition={{ delay: 1.2, duration: 0.6 }}
                   className="h-px bg-gradient-to-r from-transparent via-amber-500 to-transparent mb-3"
                 ></motion.div>
-                <p className="text-sm md:text-base uppercase tracking-[0.4em] font-heading text-gray-400">
+                <p className="text-xs sm:text-sm md:text-base uppercase tracking-[0.2em] sm:tracking-[0.4em] font-heading text-gray-400">
                   Global Head
                 </p>
               </motion.div>
@@ -222,7 +222,7 @@ const WelcomePopup: React.FC = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.9 }}
-                  className="text-3xl md:text-4xl font-serif-vintage italic text-white leading-tight"
+                  className="text-xl sm:text-3xl md:text-4xl font-serif-vintage italic text-white leading-tight"
                 >
                   {t("welcome.greeting")}
                 </motion.h2>
@@ -233,7 +233,7 @@ const WelcomePopup: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.1 }}
-                className="text-base md:text-lg text-gray-300 leading-relaxed"
+                className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed"
               >
                 {t("welcome.message")}
               </motion.p>
@@ -252,7 +252,7 @@ const WelcomePopup: React.FC = () => {
                     boxShadow: "0 20px 40px rgba(212, 175, 55, 0.4)",
                   }}
                   whileTap={{ scale: 0.95 }}
-                  className="relative px-12 py-5 bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-amber-600 text-white rounded-2xl font-heading tracking-widest text-xs uppercase shadow-2xl shadow-amber-900/50 flex items-center gap-3 group overflow-hidden"
+                  className="relative px-8 sm:px-12 py-4 sm:py-5 bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-amber-600 text-white rounded-2xl font-heading tracking-widest text-xs uppercase shadow-2xl shadow-amber-900/50 flex items-center justify-center gap-3 group overflow-hidden w-full sm:w-auto"
                 >
                   {/* Animated background shine */}
                   <motion.div

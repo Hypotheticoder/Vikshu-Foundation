@@ -71,21 +71,21 @@ const Home: React.FC = () => {
               {t("intro")}
             </p>
 
-            <h1 className="text-7xl md:text-[14rem] font-serif-vintage italic mb-12 leading-[0.8] tracking-tighter">
+            <h1 className="text-4xl sm:text-7xl md:text-[14rem] font-serif-vintage italic mb-12 leading-[0.85] sm:leading-[0.8] tracking-tighter">
               The <span className="text-amber-600">{t("hero.line1")}</span>
               <br />
               <span className="text-white/10">{t("hero.internal")}</span>{" "}
               <span className="text-white/40">{t("hero.line2")}</span>
             </h1>
 
-            <div className="max-w-4xl mx-auto relative px-10">
-              <p className="text-xl md:text-3xl text-gray-400 font-light leading-relaxed italic mb-16">
+            <div className="max-w-4xl mx-auto relative px-4 sm:px-10">
+              <p className="text-base sm:text-xl md:text-3xl text-gray-400 font-light leading-relaxed italic mb-12 sm:mb-16">
                 "{t("hero_quote")}"
               </p>
-              <div className="flex flex-col md:flex-row gap-6 justify-center">
+              <div className="flex flex-col md:flex-row gap-4 sm:gap-6 justify-center">
                 <Link
                   to="/sectors"
-                  className="px-12 py-5 bg-amber-600 text-white rounded-2xl font-heading tracking-widest text-xs uppercase shadow-2xl shadow-amber-900/40 hover:bg-amber-500 transition-all flex items-center justify-center gap-3 group"
+                  className="px-8 sm:px-12 py-4 sm:py-5 bg-amber-600 text-white rounded-2xl font-heading tracking-widest text-xs uppercase shadow-2xl shadow-amber-900/40 hover:bg-amber-500 transition-all flex items-center justify-center gap-3 group"
                 >
                   {t("cta_explore")}{" "}
                   <ArrowRight
@@ -95,7 +95,7 @@ const Home: React.FC = () => {
                 </Link>
                 <Link
                   to="/membership/enroll"
-                  className="px-12 py-5 glass border border-white/10 text-white rounded-2xl font-heading tracking-widest text-xs uppercase hover:bg-white/5 transition-all"
+                  className="px-8 sm:px-12 py-4 sm:py-5 glass border border-white/10 text-white rounded-2xl font-heading tracking-widest text-xs uppercase hover:bg-white/5 transition-all"
                 >
                   {t("cta_request")}
                 </Link>
