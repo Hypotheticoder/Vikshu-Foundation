@@ -1,0 +1,74 @@
+{
+  "header": {
+    "subtitle": "Manifesting Abundance",
+    "title": "Sacred",
+    "titleHighlight": "Offerings",
+    "description": "\"The act of giving is the highest form of self-illumination. Choose thy path of contribution to the universal welfare.\""
+  },
+  "success": {
+    "title": "Offering",
+    "titleHighlight": "Accepted",
+    "description": "\"Thy generosity has been etched into the lineage of the Vikshu Foundation. Like a ripple in a sacred lake, your contribution will touch lives far beyond the horizon.\"",
+    "button": "Peace be upon thee"
+  },
+  "donationTypes": {
+    "title": "Offering Modality",
+    "general": {
+      "name": "General",
+      "desc": "Flexible support for immediate humanitarian needs."
+    },
+    "corpus": {
+      "name": "Corpus",
+      "desc": "Permanent endowment for eternal legacy projects."
+    },
+    "anonymous": {
+      "name": "Anonymous",
+      "desc": "Contribute in sacred silence, unknown to the world."
+    }
+  },
+  "form": {
+    "title": "Offering",
+    "resonance": "Resonance Level: High Sanctity",
+    "amountLabel": "Thy Bounty (USD)",
+    "customPlaceholder": "Custom Offering",
+    "nameLabel": "Thy Nomenclature",
+    "namePlaceholder": "e.g. Aarya Vardhan",
+    "emailLabel": "Email Essence",
+    "emailPlaceholder": "scribe@lineage.org",
+    "intentLabel": "Sacred Intent",
+    "intentPlaceholder": "Describe the soul of this contribution...",
+    "submitButton": "Commit Sacred Offering"
+  },
+  "membership": {
+    "subtitle": "Fellowship Lineage",
+    "title": "Lineage",
+    "titleHighlight": "Pathways",
+    "description": "\"Every contribution is a step towards membership. Understand the specific duties and sacred privileges of thy future lineage.\"",
+    "privileges": "Sacred Privileges",
+    "duties": "Sacred Duties",
+    "criteria": "Induction Criteria"
+  },
+  "tiers": {
+    "coreFellowship": {
+      "name": "Core Fellowship",
+      "voting": "Plenary Voting Rights"
+    },
+    "ordinaryMember": {
+      "name": "Ordinary Member",
+      "voting": "Full Voting Rights"
+    },
+    "associateMember": {
+      "name": "Associate Member",
+      "voting": "Observer Status"
+    }
+  },
+  "directEndowment": {
+    "title": "Direct Endowment",
+    "accountLabel": "Primary Trust Account",
+    "accountNumber": "VIKSHU-8899-2200-11",
+    "routingLabel": "IFSC / Routing Essence",
+    "routingNumber": "VIKSHU0000042",
+    "contactNote": "For large scale heritage restorations or physical artifact endowments, please contact the High Council directly at",
+    "contactEmail": "council@vikshu.org"
+  }
+}

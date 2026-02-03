@@ -1,0 +1,98 @@
+{
+  "header": {
+    "subtitle": "Seeker Sanctuary",
+    "title": "Support &",
+    "titleHighlight": "Guidance",
+    "description": "\"For when a hand is extended in service, the heart of the universe beats as one. We provide the scaffolding for your noble intent.\""
+  },
+  "helpline": {
+    "title": "Direct Helpline",
+    "subtitle": "Urgent Resonance",
+    "description": "For immediate infrastructural or legal emergencies in heritage projects.",
+    "phone": "1-800-VIKSHU-OFFER",
+    "hoursTitle": "Hours of Duty",
+    "hoursValue": "Sunrise to Sunset",
+    "emailTitle": "Epistolary",
+    "emailValue": "scribe@vikshu.org"
+  },
+  "consultancy": {
+    "subtitle": "The Advisory Mandate",
+    "title": "Consultancy",
+    "titleHighlight": "Excellence",
+    "description": "A comprehensive suite of advisory services designed to fortify the foundations of global non-profits and individual legacy holders.",
+    "serviceFacets": "Service Facets:",
+    "beginConsultation": "Begin Consultation"
+  },
+  "services": {
+    "legal": {
+      "title": "Legal & Regulatory Aid",
+      "desc": "Comprehensive navigation through the labyrinth of global NGO compliance, trust laws, and the complex preservation of architectural heritage rights. We protect thy legacy from modern bureaucratic erosion.",
+      "features": [
+        "International Trust Compliance",
+        "Heritage Property Rights",
+        "Non-profit Charter Audits",
+        "Dispute Resolution Advisory"
+      ]
+    },
+    "financial": {
+      "title": "Strategic Financial Advisory",
+      "desc": "Refined management of humanitarian capital and corpus endowments. We apply Victorian prudence and Vedic abundance principles to ensure thy capital grows ethically and eternally.",
+      "features": [
+        "Endowment Growth Strategy",
+        "Ethical Investment Portfolios",
+        "Impact Reinvestment Models",
+        "Fiscal Transparency Reporting"
+      ]
+    },
+    "infrastructure": {
+      "title": "Infrastructural Mentoring",
+      "desc": "Specialized support for building physical and digital foundations, from the structural restoration of ancient sanctuaries to the architecture of high-security digital archives.",
+      "features": [
+        "Heritage Restoration Engineering",
+        "Digital Archive Architecture",
+        "Sanctuary Spatial Planning",
+        "Sustainable Resource Management"
+      ]
+    },
+    "management": {
+      "title": "Management & Mentoring",
+      "desc": "Strategic guidance for organization leaders and seekers, focusing on operational efficiency, team alignment, and the cultivation of cultural leadership across generations.",
+      "features": [
+        "Lineage Succession Planning",
+        "Operational Integrity Audits",
+        "Cross-Cultural Team Alignment",
+        "Dharmic Leadership Coaching"
+      ]
+    }
+  },
+  "engagement": {
+    "title": "The Engagement Process",
+    "subtitle": "Four Steps to Alignment",
+    "phase": "Phase",
+    "steps": {
+      "inquiry": "Initial Inquiry",
+      "resonance": "Resonance Check",
+      "strategy": "Strategy Drafting",
+      "stewardship": "Active Stewardship"
+    }
+  },
+  "contactForm": {
+    "title": "Send a",
+    "titleHighlight": "Query",
+    "subtitle": "All communications are treated with absolute archival sanctity.",
+    "nameLabel": "Thy Name",
+    "emailLabel": "Email Essence",
+    "supportTypeLabel": "Nature of Support",
+    "messageLabel": "Thy Message",
+    "submitButton": "Dispatch Message"
+  },
+  "supportTypes": {
+    "general": "General Inquiry",
+    "legal": "Legal Consultancy",
+    "financial": "Financial Strategy",
+    "helpline": "Helpline Assistance",
+    "spiritual": "Spiritual Counseling",
+    "infrastructure": "Infrastructural Support",
+    "management": "Management & Mentoring"
+  }
+}
