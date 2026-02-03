@@ -13,6 +13,7 @@ import { useTranslation } from "react-i18next";
 import NGOPost from "../components/ui/NGOPost";
 import QuoteBlock from "../components/ui/QuoteBlock";
 import WelcomePopup from "../components/ui/WelcomePopup";
+import AboutUs from "../components/ui/AboutUs";
 
 const Home: React.FC = () => {
   const { t } = useTranslation("home");
@@ -146,6 +147,8 @@ const Home: React.FC = () => {
               </motion.div>
             ))}
           </div>
+
+          <AboutUs />
 
           <QuoteBlock
             className="mt-40"

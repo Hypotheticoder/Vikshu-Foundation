@@ -25,13 +25,6 @@ const Navbar: React.FC<NavbarProps> = ({
 }) => {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [lang, setLang] = useState<string>(() => {
-    try {
-      return window.localStorage.getItem("i18nextLng") || i18n.language || "en";
-    } catch (e) {
-      return i18n.language || "en";
-    }
-  });
   const [langOpen, setLangOpen] = useState(false);
   const langRef = useRef<HTMLDivElement | null>(null);
   const location = useLocation();
@@ -113,12 +106,12 @@ const Navbar: React.FC<NavbarProps> = ({
               >
                 <Globe size={14} />
                 <span className="hidden sm:inline-block">
-                  {lang === "en"
+                  {i18n.language === "en"
                     ? "English"
-                    : lang === "bn"
+                    : i18n.language === "bn"
                       ? "বাংলা"
-                      : lang === "hi"
-                        ? "हिन्दी"
+                      : i18n.language === "hi"
+                        ? "हिन্দी"
                         : "অসমীয়া"}
                 </span>
                 <ChevronDown size={14} />
@@ -130,8 +123,6 @@ const Navbar: React.FC<NavbarProps> = ({
                     className="w-full text-left px-4 py-3 hover:bg-white/5"
                     onClick={() => {
                       i18n.changeLanguage("en");
-                      setLang("en");
-                      window.localStorage.setItem("i18nextLng", "en");
                       setLangOpen(false);
                     }}
                   >
@@ -141,8 +132,6 @@ const Navbar: React.FC<NavbarProps> = ({
                     className="w-full text-left px-4 py-3 hover:bg-white/5"
                     onClick={() => {
                       i18n.changeLanguage("bn");
-                      setLang("bn");
-                      window.localStorage.setItem("i18nextLng", "bn");
                       setLangOpen(false);
                     }}
                   >
@@ -152,8 +141,6 @@ const Navbar: React.FC<NavbarProps> = ({
                     className="w-full text-left px-4 py-3 hover:bg-white/5"
                     onClick={() => {
                       i18n.changeLanguage("hi");
-                      setLang("hi");
-                      window.localStorage.setItem("i18nextLng", "hi");
                       setLangOpen(false);
                     }}
                   >
@@ -163,8 +150,6 @@ const Navbar: React.FC<NavbarProps> = ({
                     className="w-full text-left px-4 py-3 hover:bg-white/5"
                     onClick={() => {
                       i18n.changeLanguage("as");
-                      setLang("as");
-                      window.localStorage.setItem("i18nextLng", "as");
                       setLangOpen(false);
                     }}
                   >
@@ -238,8 +223,6 @@ const Navbar: React.FC<NavbarProps> = ({
               <button
                 onClick={() => {
                   i18n.changeLanguage("en");
-                  setLang("en");
-                  window.localStorage.setItem("i18nextLng", "en");
                   setIsOpen(false);
                 }}
                 className="px-4 py-2 rounded-full bg-white/5 hover:bg-white/10"
@@ -249,8 +232,6 @@ const Navbar: React.FC<NavbarProps> = ({
               <button
                 onClick={() => {
                   i18n.changeLanguage("bn");
-                  setLang("bn");
-                  window.localStorage.setItem("i18nextLng", "bn");
                   setIsOpen(false);
                 }}
                 className="px-4 py-2 rounded-full bg-white/5 hover:bg-white/10"
@@ -260,8 +241,6 @@ const Navbar: React.FC<NavbarProps> = ({
               <button
                 onClick={() => {
                   i18n.changeLanguage("hi");
-                  setLang("hi");
-                  window.localStorage.setItem("i18nextLng", "hi");
                   setIsOpen(false);
                 }}
                 className="px-4 py-2 rounded-full bg-white/5 hover:bg-white/10"
@@ -271,8 +250,6 @@ const Navbar: React.FC<NavbarProps> = ({
               <button
                 onClick={() => {
                   i18n.changeLanguage("as");
-                  setLang("as");
-                  window.localStorage.setItem("i18nextLng", "as");
                   setIsOpen(false);
                 }}
                 className="px-4 py-2 rounded-full bg-white/5 hover:bg-white/10"

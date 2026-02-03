@@ -56,5 +56,20 @@
     "greeting": "Welcome to Vikshu Foundation",
     "message": "We are honored to have you here. Vikshu is a sacred space dedicated to preserving global heritage and fostering collective enlightenment. May your journey with us be one of wisdom and inner discovery.",
     "continue": "Begin Your Journey"
+  },
+
+  "about": {
+    "subtitle": "Our Vision",
+    "title": "About Us",
+    "philosophy_label": "Our Philosophy",
+    "philosophy": "Vikshu Foundation stands at the intersection of ancient wisdom and modern innovation, where heritage is not merely preserved but lived, breathed, and evolved.",
+    "mission_1_title": "Sacred Preservation",
+    "mission_1_text": "We safeguard the spiritual and cultural legacies that form humanity's collective conscience, ensuring they remain vibrant for generations to come.",
+    "mission_2_title": "Global Fellowship",
+    "mission_2_text": "We unite seekers, scholars, and stewards from across the world, creating a living network of wisdom-keepers committed to collective enlightenment.",
+    "mission_3_title": "Transformative Action",
+    "mission_3_text": "We don't just study heritage—we activate it. Through education, restoration, and innovation, we transform ancient wisdom into solutions for modern challenges.",
+    "closing": "Under the guidance of visionary leadership, Vikshu Foundation continues to expand its reach while staying rooted in the timeless principles of truth, service, and inner awakening.",
+    "signature": "The Vikshu Fellowship"
   }
 }
