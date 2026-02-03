@@ -111,7 +111,7 @@ const Navbar: React.FC<NavbarProps> = ({
                     : i18n.language === "bn"
                       ? "বাংলা"
                       : i18n.language === "hi"
-                        ? "हिन্দी"
+                        ? "हिंदी"
                         : "অসমীয়া"}
                 </span>
                 <ChevronDown size={14} />
