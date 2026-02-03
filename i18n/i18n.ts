@@ -7,6 +7,21 @@ import enHome from "./en/home.json";
 import hiHome from "./hi/home.json";
 import asHome from "./as/home.json";
 
+import bnSectors from "./bn/sectors.json";
+import enSectors from "./en/sectors.json";
+import hiSectors from "./hi/sectors.json";
+import asSectors from "./as/sectors.json";
+
+import bnMembership from "./bn/membership.json";
+import enMembership from "./en/membership.json";
+import hiMembership from "./hi/membership.json";
+import asMembership from "./as/membership.json";
+
+import bnEnrollment from "./bn/enrollment.json";
+import enEnrollment from "./en/enrollment.json";
+import hiEnrollment from "./hi/enrollment.json";
+import asEnrollment from "./as/enrollment.json";
+
 // Heuristic to pick one of four supported languages: en, bn, hi, as.
 // Order of precedence:
 // 1) explicit querystring (?lang=...)
@@ -66,14 +81,14 @@ i18n
   .use(initReactI18next)
   .init({
     resources: {
-      en: { home: enHome },
-      bn: { home: bnHome },
-      hi: { home: hiHome },
-      as: { home: asHome }
+      en: { home: enHome, sectors: enSectors, membership: enMembership, enrollment: enEnrollment },
+      bn: { home: bnHome, sectors: bnSectors, membership: bnMembership, enrollment: bnEnrollment },
+      hi: { home: hiHome, sectors: hiSectors, membership: hiMembership, enrollment: hiEnrollment },
+      as: { home: asHome, sectors: asSectors, membership: asMembership, enrollment: asEnrollment }
     },
     fallbackLng: 'en',
     supportedLngs: SUPPORTED,
-    ns: ['home'],
+    ns: ['home', 'sectors', 'membership', 'enrollment'],
     defaultNS: 'home',
     lng: initialLang,
     detection: {

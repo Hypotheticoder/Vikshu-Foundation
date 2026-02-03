@@ -1,0 +1,28 @@
+{
+  "header": {
+    "subtitle": "Universal Fellowship",
+    "title": "The",
+    "titleHighlight": "Lineage",
+    "description": "\"A covenant between the seeker and the universal truth. Each path holds distinct duties, specific requirements, and sacred privileges.\""
+  },
+  "tiers": {
+    "coreFellowship": "Core Fellowship",
+    "ordinaryMember": "Ordinary Member",
+    "associateMember": "Associate Member",
+    "honoraryMember": "Honorary Member",
+    "institutionalPartner": "Institutional Partner"
+  },
+  "sections": {
+    "privileges": "Sacred Privileges",
+    "duties": "Sacred Duties",
+    "criteria": "Induction Criteria"
+  },
+  "voting": {
+    "plenary": "Plenary Voting Rights (Council Seat)",
+    "full": "Full Voting Rights (General Assembly)",
+    "observer": "Observer Status (Non-voting)",
+    "advisory": "Advisory Capacity (Non-voting)",
+    "stakeholder": "Stakeholder Status (Non-voting)"
+  },
+  "cta": "Seek Induction"
+}

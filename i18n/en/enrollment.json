@@ -1,0 +1,57 @@
+{
+  "header": {
+    "subtitle": "Sacred Enrollment",
+    "title": "Request for",
+    "titleHighlight": "Induction",
+    "description": "\"Step forward, seeker. To join the Vikshu Fellowship is to commit thy breath to the preservation of truth and the service of humanity.\""
+  },
+  "success": {
+    "title": "Petition",
+    "titleHighlight": "Received",
+    "description": "\"Your intent has rippled through the cosmic archives. The Council of Elders shall review thy lineage and resonance. Expect a whisper in thy inbox soon.\"",
+    "quote": "\"To seek truth in the company of the wise is to invite the dawn into one's soul.\"",
+    "button": "Return to Sanctuary"
+  },
+  "sections": {
+    "identity": {
+      "title": "The Seeker's",
+      "titleHighlight": "Identity",
+      "legalName": "Legal Nomenclature",
+      "legalNamePlaceholder": "As recognized by the state...",
+      "spiritualName": "Spiritual / Pen Name",
+      "spiritualNamePlaceholder": "As recognized by the soul...",
+      "email": "Primary Resonance (Email)",
+      "emailPlaceholder": "scribe@lineage.com",
+      "tier": "Chosen Fellowship Tier"
+    },
+    "influence": {
+      "title": "Sphere of",
+      "titleHighlight": "Influence",
+      "pillars": "Primary Pillars of Interest",
+      "skills": "The Alms of Talent (Skills)",
+      "skillsPlaceholder": "e.g. Sanskrit Translation, Structural Engineering, Financial Auditing..."
+    },
+    "dharma": {
+      "title": "Statement of",
+      "titleHighlight": "Dharma",
+      "motivation": "Thy Motivation",
+      "motivationPlaceholder": "Why do you seek induction into the Vikshu lineage? What legacy do you wish to build with us?",
+      "affirmation": "By submitting this petition, you affirm your commitment to the foundation's core principles: the preservation of ancient wisdom, the upliftment of the marginalized, and the ethical pursuit of human innovation."
+    }
+  },
+  "tiers": {
+    "ordinary": "Ordinary Member (Voting)",
+    "associate": "Associate Member (Non-Voting)",
+    "institutional": "Institutional Partner",
+    "honorary": "Honorary Delegate Request"
+  },
+  "pillars": {
+    "education": "Education",
+    "shelter": "Shelter",
+    "health": "Health",
+    "innovation": "Innovation",
+    "spiritualLife": "Spiritual Life",
+    "selfEmpowerment": "Self Empowerment"
+  },
+  "submit": "Dispatch Petition for Review"
+}

@@ -1,0 +1,20 @@
+{
+  "header": {
+    "subtitle": "Spheres of Action",
+    "title": "Pillars of",
+    "titleHighlight": "Action",
+    "description": "\"The goal of humanity is knowledge. From the nursery of curiosity to the art house of truth, we build the scaffolding of the soul.\""
+  },
+  "sectors": {
+    "education": "Education",
+    "spiritualLife": "Spiritual Life",
+    "shelter": "Shelter",
+    "innovation": "Innovation",
+    "health": "Health",
+    "selfEmpowerment": "Self Empowerment"
+  },
+  "quote": {
+    "text": "Be thankful for what you have; you'll end up having more. If you concentrate on what you don't have, you will never, ever have enough.",
+    "author": "From the Vikshu Lineage"
+  }
+}
