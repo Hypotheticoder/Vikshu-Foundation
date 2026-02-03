@@ -124,7 +124,7 @@ const WelcomePopup: React.FC = () => {
                     initial={{ scale: 1.2, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     transition={{ duration: 1, delay: 0.5 }}
-                    src="/assets/leader.png"
+                    src="/assets/leader2.jpeg"
                     alt="Aheli Pramanik"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     onError={(e) => {
