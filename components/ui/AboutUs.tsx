@@ -182,7 +182,7 @@ const AboutUs: React.FC = () => {
                     <div className="w-1 h-1 bg-amber-500 rounded-full"></div>
                   </div>
                   <p className="text-xs uppercase tracking-[0.3em] font-heading text-gray-500">
-                    Chief Advisor
+                    Chief Mentor
                   </p>
                 </div>
 
