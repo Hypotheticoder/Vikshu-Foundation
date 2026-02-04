@@ -125,7 +125,7 @@ const WelcomePopup: React.FC = () => {
                     animate={{ scale: 1, opacity: 1 }}
                     transition={{ duration: 1, delay: 0.5 }}
                     src="/assets/leader2.jpeg"
-                    alt="Aheli Pramanik"
+                    alt="Aheli"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     onError={(e) => {
                       e.currentTarget.src =
@@ -170,7 +170,7 @@ const WelcomePopup: React.FC = () => {
                   className="text-2xl sm:text-4xl md:text-5xl font-serif-vintage italic text-amber-500 mb-2 drop-shadow-lg"
                   whileHover={{ scale: 1.05 }}
                 >
-                  Aheli Pramanik
+                  Aheli
                 </motion.h3>
                 <motion.div
                   initial={{ width: 0 }}

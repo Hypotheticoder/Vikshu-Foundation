@@ -61,7 +61,7 @@ const AboutUs: React.FC = () => {
                 >
                   <img
                     src="/assets/leader3.jpeg"
-                    alt="Aheli Pramanik - Global Head"
+                    alt="Aheli - Global Head"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     onError={(e) => {
                       e.currentTarget.src =
@@ -97,7 +97,7 @@ const AboutUs: React.FC = () => {
                 ></motion.div>
 
                 <h3 className="text-3xl md:text-4xl font-serif-vintage italic text-amber-500">
-                  Aheli Pramanik
+                  Aheli
                 </h3>
                 <p className="text-sm uppercase tracking-[0.4em] font-heading text-gray-400">
                   Global Head
