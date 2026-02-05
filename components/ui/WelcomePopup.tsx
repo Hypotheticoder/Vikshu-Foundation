@@ -238,6 +238,19 @@ const WelcomePopup: React.FC = () => {
                 {t("welcome.message")}
               </motion.p>
 
+              {/* Bio text about Aheli */}
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1.2 }}
+                className="text-sm sm:text-base text-gray-400 leading-relaxed italic border-l-2 border-amber-500/30 pl-4"
+              >
+                Advancing from a dedicated UK mental health advisor to Global
+                Head of Vikshu, she bridges the gap between clinical empathy and
+                international leadership. Her mission is to revolutionize mental
+                health support on a truly global scale.
+              </motion.p>
+
               {/* Interactive CTA button */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
