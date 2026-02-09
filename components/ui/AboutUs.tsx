@@ -207,7 +207,7 @@ const AboutUs: React.FC = () => {
         >
           {/* Background glow */}
           <div className="absolute inset-0 bg-gradient-to-r from-amber-600/10 via-amber-500/5 to-amber-600/10 blur-3xl -z-10"></div>
-          
+
           {/* Section title */}
           <div className="text-center mb-12">
             <motion.div
@@ -241,11 +241,11 @@ const AboutUs: React.FC = () => {
           >
             {/* Decorative frame */}
             <div className="absolute -inset-6 bg-gradient-to-br from-amber-600/30 via-amber-500/10 to-amber-900/20 rounded-[4rem] blur-3xl opacity-50 group-hover:opacity-100 transition-opacity duration-700"></div>
-            
+
             <div className="relative glass p-6 md:p-10 rounded-[3rem] border border-amber-500/30 shadow-2xl overflow-hidden">
               {/* Vintage paper texture overlay */}
               <div className="absolute inset-0 vintage-paper opacity-[0.02] mix-blend-overlay pointer-events-none"></div>
-              
+
               {/* Animated corner decorations */}
               <motion.div
                 animate={{ rotate: 360 }}
@@ -278,21 +278,21 @@ const AboutUs: React.FC = () => {
                         'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"%3E%3Cdefs%3E%3ClinearGradient id="award-bg" x1="0%25" y1="0%25" x2="100%25" y2="100%25"%3E%3Cstop offset="0%25" style="stop-color:%23d4af37"/%3E%3Cstop offset="100%25" style="stop-color:%23704214"/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill="url(%23award-bg)" width="800" height="600"/%3E%3Ccircle cx="400" cy="300" r="80" fill="none" stroke="%230c0c0c" stroke-width="4"/%3E%3Cpath d="M400 220 L420 280 L480 280 L430 320 L450 380 L400 340 L350 380 L370 320 L320 280 L380 280 Z" fill="%230c0c0c"/%3E%3Ctext x="50%25" y="70%25" dominant-baseline="middle" text-anchor="middle" font-family="serif" font-size="32" fill="%230c0c0c" font-weight="bold"%3EACHIEVEMENT%3C/text%3E%3C/svg%3E';
                     }}
                   />
-                  
+
                   {/* Gradient overlay for depth */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent pointer-events-none"></div>
-                  
+
                   {/* Shine effect on hover */}
                   <motion.div
                     className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100"
                     animate={{
-                      x: ['-200%', '200%']
+                      x: ["-200%", "200%"],
                     }}
                     transition={{
                       duration: 1.5,
                       repeat: Infinity,
                       repeatDelay: 3,
-                      ease: "easeInOut"
+                      ease: "easeInOut",
                     }}
                   />
                 </motion.div>
@@ -315,7 +315,8 @@ const AboutUs: React.FC = () => {
                   className="text-center mt-8"
                 >
                   <p className="text-lg md:text-xl font-serif-vintage italic text-gray-300 leading-relaxed mb-4">
-                    "Honoring dedication to the preservation of cultural heritage and sustainable community development"
+                    "Honoring dedication to the preservation of cultural
+                    heritage and sustainable community development"
                   </p>
                   <div className="flex items-center justify-center gap-4 opacity-60">
                     <div className="h-px w-16 bg-amber-500/30"></div>
