@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { Sparkles, Quote } from "lucide-react";
+import { Sparkles, Quote, Award, Trophy } from "lucide-react";
 
 const AboutUs: React.FC = () => {
   const { t } = useTranslation("home");
@@ -196,6 +196,137 @@ const AboutUs: React.FC = () => {
             </div>
           </motion.div>
         </div>
+
+        {/* Achievements Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="mb-32 relative"
+        >
+          {/* Background glow */}
+          <div className="absolute inset-0 bg-gradient-to-r from-amber-600/10 via-amber-500/5 to-amber-600/10 blur-3xl -z-10"></div>
+          
+          {/* Section title */}
+          <div className="text-center mb-12">
+            <motion.div
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="inline-flex items-center gap-3 px-6 py-3 glass rounded-full border border-amber-500/30 mb-6"
+            >
+              <Trophy className="text-amber-500" size={20} />
+              <span className="text-amber-500 text-xs uppercase tracking-[0.4em] font-heading">
+                Recognitions
+              </span>
+              <Award className="text-amber-500" size={20} />
+            </motion.div>
+            <h3 className="text-4xl md:text-5xl font-serif-vintage italic text-white mb-4">
+              Our <span className="text-amber-500">Achievements</span>
+            </h3>
+            <p className="text-gray-400 italic max-w-2xl mx-auto">
+              "Excellence recognized, legacy honored, impact celebrated"
+            </p>
+          </div>
+
+          {/* Award card */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="max-w-4xl mx-auto relative group"
+          >
+            {/* Decorative frame */}
+            <div className="absolute -inset-6 bg-gradient-to-br from-amber-600/30 via-amber-500/10 to-amber-900/20 rounded-[4rem] blur-3xl opacity-50 group-hover:opacity-100 transition-opacity duration-700"></div>
+            
+            <div className="relative glass p-6 md:p-10 rounded-[3rem] border border-amber-500/30 shadow-2xl overflow-hidden">
+              {/* Vintage paper texture overlay */}
+              <div className="absolute inset-0 vintage-paper opacity-[0.02] mix-blend-overlay pointer-events-none"></div>
+              
+              {/* Animated corner decorations */}
+              <motion.div
+                animate={{ rotate: 360 }}
+                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                className="absolute top-4 right-4 opacity-20"
+              >
+                <Sparkles className="text-amber-500" size={32} />
+              </motion.div>
+              <motion.div
+                animate={{ rotate: -360 }}
+                transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+                className="absolute bottom-4 left-4 opacity-20"
+              >
+                <Award className="text-amber-500" size={28} />
+              </motion.div>
+
+              {/* Award image container */}
+              <div className="relative">
+                <motion.div
+                  whileHover={{ scale: 1.02 }}
+                  transition={{ duration: 0.4 }}
+                  className="relative rounded-[2rem] overflow-hidden border-4 border-amber-500/40 shadow-2xl group"
+                >
+                  <img
+                    src="/assets/award.jpeg"
+                    alt="Vikshu Foundation Achievement Award"
+                    className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-700"
+                    onError={(e) => {
+                      e.currentTarget.src =
+                        'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"%3E%3Cdefs%3E%3ClinearGradient id="award-bg" x1="0%25" y1="0%25" x2="100%25" y2="100%25"%3E%3Cstop offset="0%25" style="stop-color:%23d4af37"/%3E%3Cstop offset="100%25" style="stop-color:%23704214"/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill="url(%23award-bg)" width="800" height="600"/%3E%3Ccircle cx="400" cy="300" r="80" fill="none" stroke="%230c0c0c" stroke-width="4"/%3E%3Cpath d="M400 220 L420 280 L480 280 L430 320 L450 380 L400 340 L350 380 L370 320 L320 280 L380 280 Z" fill="%230c0c0c"/%3E%3Ctext x="50%25" y="70%25" dominant-baseline="middle" text-anchor="middle" font-family="serif" font-size="32" fill="%230c0c0c" font-weight="bold"%3EACHIEVEMENT%3C/text%3E%3C/svg%3E';
+                    }}
+                  />
+                  
+                  {/* Gradient overlay for depth */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent pointer-events-none"></div>
+                  
+                  {/* Shine effect on hover */}
+                  <motion.div
+                    className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100"
+                    animate={{
+                      x: ['-200%', '200%']
+                    }}
+                    transition={{
+                      duration: 1.5,
+                      repeat: Infinity,
+                      repeatDelay: 3,
+                      ease: "easeInOut"
+                    }}
+                  />
+                </motion.div>
+
+                {/* Decorative line below image */}
+                <motion.div
+                  initial={{ width: 0 }}
+                  whileInView={{ width: "100%" }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.8, duration: 1 }}
+                  className="h-px bg-gradient-to-r from-transparent via-amber-500 to-transparent mt-8"
+                ></motion.div>
+
+                {/* Optional caption/description */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 1, duration: 0.6 }}
+                  className="text-center mt-8"
+                >
+                  <p className="text-lg md:text-xl font-serif-vintage italic text-gray-300 leading-relaxed mb-4">
+                    "Honoring dedication to the preservation of cultural heritage and sustainable community development"
+                  </p>
+                  <div className="flex items-center justify-center gap-4 opacity-60">
+                    <div className="h-px w-16 bg-amber-500/30"></div>
+                    <Quote size={14} className="text-amber-500" />
+                    <div className="h-px w-16 bg-amber-500/30"></div>
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+          </motion.div>
+        </motion.div>
 
         {/* Main content section */}
         <div className="grid grid-cols-1 lg:grid-cols-1 gap-16 items-center">
