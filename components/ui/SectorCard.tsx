@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, Sparkles } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface SectorCardProps {
   title: string;
@@ -10,15 +11,16 @@ interface SectorCardProps {
   color: string;
   image?: string;
   className?: string;
+  link?: string;
 }
 
-const SectorCard: React.FC<SectorCardProps> = ({ title, icon, desc, color, image, className = "" }) => {
-  return (
+const SectorCard: React.FC<SectorCardProps> = ({ title, icon, desc, color, image, className = "", link }) => {
+  const content = (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-      className={`glass rounded-[3.5rem] border border-white/10 hover:border-amber-600/40 transition-all cursor-pointer group relative overflow-hidden h-full flex flex-col min-h-[400px] shadow-2xl ${className}`}
+      className={`glass rounded-[3.5rem] border border-white/10 hover:border-amber-600/40 transition-all cursor-pointer group relative overflow-hidden h-full flex flex-col min-h-[400px] shadow-2xl block ${link ? '' : className}`}
     >
       {/* Background Image with Blending */}
       {image && (
@@ -64,6 +66,12 @@ const SectorCard: React.FC<SectorCardProps> = ({ title, icon, desc, color, image
       <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-white/10 to-transparent pointer-events-none opacity-50"></div>
     </motion.div>
   );
+
+  if (link) {
+    return <Link to={link} className={`block h-full ${className}`}>{content}</Link>;
+  }
+
+  return content;
 };
 
 export default SectorCard;

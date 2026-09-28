@@ -1,0 +1,43 @@
+{
+  "header": {
+    "badge": "Sacred Lineage",
+    "title": "Dharma",
+    "titleHighlight": "Bharat",
+    "subtitle": "The luminaries who illuminate the path of dharma and guide the Vikshu Foundation's spiritual mission."
+  },
+  "leaders": [
+    {
+      "name": "Vaisnav Acharya Chinmayanand Dashji Maharaj",
+      "title": "Vaisnav Acharya",
+      "description": "Guiding the lineage through devotion and timeless wisdom, establishing the path of profound inner peace."
+    },
+    {
+      "name": "Shrimat Jagadguru Avadhutacharya Swami Dr. Sundar Giri Maharaj",
+      "title": "Jagatguru",
+      "description": "A beacon of ultimate truth, leading seekers across the globe towards spiritual awakening and eternal harmony."
+    }
+  ],
+  "homeCard": {
+    "badge": "Sacred Lineage",
+    "title": "Dharma Bharat",
+    "subtitle": "Meet the luminaries who illuminate the path of dharma and guide the Vikshu Foundation's spiritual mission.",
+    "cta": "Access Lineage"
+  },
+  "biography": {
+    "sectionBadge": "Spiritual Profile",
+    "heading": "About the",
+    "headingHighlight": "Jagatguru",
+    "intro": "Adorned with infinite divine glory, the most revered Shrimat Jagadguru Avadhutacharya Swami Dr. Sundar Giri Maharaj shines as a brilliant star of the Sanatana spiritual world. Being a wandering sannyasi (Paribrajaak) of the Shri Panchadashanami sect, his pre-monastic name and identity are withheld in accordance with tradition.",
+    "readMore": "Read Full Profile",
+    "readLess": "Show Less",
+    "milestones": {
+      "lineage": { "title": "Origin & Lineage", "text": "Born in the Jadavpur area of South Kolkata, he is the last heir of the Chandranath Dham's serving family from the Chittagong region of undivided Bengal — a Nath Yogi Rudraj Brahmin by lineage." },
+      "academia": { "title": "Academic Excellence", "text": "He holds doctorates in two disciplines: Biological Chemistry Applied in Medical Science, and Dermatoglyphics as used in Forensic Science." },
+      "media": { "title": "Before Sannyasa", "text": "In his pre-monastic life, he served as Chief News Editor for ETV and Zee News (Eastern Region), managing one of India's largest news networks." },
+      "initiation": { "title": "Sannyasa Initiation — 2004", "text": "At the Prayagraj Maha Kumbh Mela in 2004, he received sannyasa diksha from Brahmalin Shri Mahant Kishor Giri Maharaj at Shri Panchadashanami Juna Akhara, and was elected Mahant the following year." },
+      "titles": { "title": "Sacred Titles", "text": "He long held the revered title of 'Shri Shri 1008 Mahamandaleshwar', and currently occupies the highest seat in the Shakta tradition — 'Shrimat Jagadguru Avadhutacharya'." },
+      "global": { "title": "Global Leadership", "text": "He serves as Global Chairperson of 'The Hindu Mission' — the world's oldest Sanatani Hindu organisation, established in 1752, now active across nine countries worldwide." },
+      "service": { "title": "Service & Trusteeship", "text": "He serves as Pithadhishwara of Shri Shri Kalika Mahashaktipeetham Kalighat and Shri Shri Baba Tarakeshwar Development Trust, among many other spiritual and social organisations." }
+    }
+  }
+}

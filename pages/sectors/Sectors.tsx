@@ -34,6 +34,7 @@ const Sectors: React.FC = () => {
       image:
         "https://images.unsplash.com/photo-1528319725582-ddc096101511?q=80&w=1200",
       className: "md:col-span-1 md:row-span-2",
+      link: "/spiritual-life",
     },
     {
       title: t("sectors.shelter"),

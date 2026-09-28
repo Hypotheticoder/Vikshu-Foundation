@@ -32,6 +32,11 @@ import enDonations from "./en/donations.json";
 import hiDonations from "./hi/donations.json";
 import asDonations from "./as/donations.json";
 
+import bnSpiritual from "./bn/spiritual.json";
+import enSpiritual from "./en/spiritual.json";
+import hiSpiritual from "./hi/spiritual.json";
+import asSpiritual from "./as/spiritual.json";
+
 // Heuristic to pick one of four supported languages: en, bn, hi, as.
 // Order of precedence:
 // 1) explicit querystring (?lang=...)
@@ -91,14 +96,14 @@ i18n
   .use(initReactI18next)
   .init({
     resources: {
-      en: { home: enHome, sectors: enSectors, membership: enMembership, enrollment: enEnrollment, support: enSupport, donations: enDonations },
-      bn: { home: bnHome, sectors: bnSectors, membership: bnMembership, enrollment: bnEnrollment, support: bnSupport, donations: bnDonations },
-      hi: { home: hiHome, sectors: hiSectors, membership: hiMembership, enrollment: hiEnrollment, support: hiSupport, donations: hiDonations },
-      as: { home: asHome, sectors: asSectors, membership: asMembership, enrollment: asEnrollment, support: asSupport, donations: asDonations }
+      en: { home: enHome, sectors: enSectors, membership: enMembership, enrollment: enEnrollment, support: enSupport, donations: enDonations, spiritual: enSpiritual },
+      bn: { home: bnHome, sectors: bnSectors, membership: bnMembership, enrollment: bnEnrollment, support: bnSupport, donations: bnDonations, spiritual: bnSpiritual },
+      hi: { home: hiHome, sectors: hiSectors, membership: hiMembership, enrollment: hiEnrollment, support: hiSupport, donations: hiDonations, spiritual: hiSpiritual },
+      as: { home: asHome, sectors: asSectors, membership: asMembership, enrollment: asEnrollment, support: asSupport, donations: asDonations, spiritual: asSpiritual }
     },
     fallbackLng: 'en',
     supportedLngs: SUPPORTED,
-    ns: ['home', 'sectors', 'membership', 'enrollment', 'support', 'donations'],
+    ns: ['home', 'sectors', 'membership', 'enrollment', 'support', 'donations', 'spiritual'],
     defaultNS: 'home',
     lng: initialLang,
     detection: {

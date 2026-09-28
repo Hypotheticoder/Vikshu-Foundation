@@ -14,9 +14,11 @@ import NGOPost from "../components/ui/NGOPost";
 import QuoteBlock from "../components/ui/QuoteBlock";
 import WelcomePopup from "../components/ui/WelcomePopup";
 import AboutUs from "../components/ui/AboutUs";
+import DharmaBharatTeaser from "../components/ui/DharmaBharatTeaser";
 
 const Home: React.FC = () => {
   const { t } = useTranslation("home");
+  const { t: ts } = useTranslation("spiritual");
 
   const partnerPosts = [
     {
@@ -147,6 +149,9 @@ const Home: React.FC = () => {
               </motion.div>
             ))}
           </div>
+
+          {/* Dharma Bharat Teaser */}
+          <DharmaBharatTeaser />
 
           <AboutUs />
 

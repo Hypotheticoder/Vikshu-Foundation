@@ -13,6 +13,7 @@ const FellowshipEnrollment = React.lazy(() => import('../pages/membership/Fellow
 const FellowsDirectory = React.lazy(() => import('../pages/membership/FellowsDirectory'));
 const WisdomSearch = React.lazy(() => import('../pages/heritage/WisdomSearch'));
 const RestorationLab = React.lazy(() => import('../pages/heritage/RestorationLab'));
+const SpiritualLineage = React.lazy(() => import('../pages/spiritual/SpiritualLineage'));
 import { useStore } from './store/useStore';
 
 const AppRoutes: React.FC = () => {
@@ -31,6 +32,7 @@ const AppRoutes: React.FC = () => {
       <Route path="/donations" element={<Donations />} />
       <Route path="/archives" element={<WisdomSearch />} />
       <Route path="/lab" element={<RestorationLab />} />
+      <Route path="/spiritual-life" element={<SpiritualLineage />} />
       <Route 
         path="/profile" 
         element={isAuthenticated ? <Profile /> : <Navigate to="/auth/login" />} 

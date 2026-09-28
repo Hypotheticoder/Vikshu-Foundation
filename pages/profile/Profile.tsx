@@ -1,7 +1,8 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { User, Shield, Award, History, Wand2, Sparkles, LogOut } from 'lucide-react';
+import { User, Shield, Award, History, Wand2, Sparkles, LogOut, Moon, ArrowUpRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import QuoteBlock from '../../components/ui/QuoteBlock';
 
 const Profile: React.FC = () => {
@@ -56,6 +57,28 @@ const Profile: React.FC = () => {
               <LogOut size={14} /> Exit Sanctuary
             </button>
           </div>
+
+          <Link to="/spiritual-life" className="block relative w-full h-[400px] rounded-[3.5rem] overflow-hidden group border border-white/10 hover:border-amber-500/30 transition-all shadow-2xl">
+            <img src="/assets/dharma bharat.jpeg" alt="Japa Mala" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-60" style={{ objectPosition: "center center" }} />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/80"></div>
+            <div className="absolute top-6 left-6 w-12 h-12 bg-amber-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-amber-900/40">
+              <Moon size={24} />
+            </div>
+            <div className="absolute top-6 right-6 text-amber-600 opacity-50 group-hover:opacity-100 transition-opacity">
+              <Sparkles size={20} />
+            </div>
+            <div className="absolute bottom-6 left-6 right-6 flex flex-col justify-end">
+              <h2 className="text-3xl font-serif-vintage italic text-amber-500 mb-4 drop-shadow-md">Spiritual Life</h2>
+              <p className="text-xs text-gray-300 italic mb-8 leading-relaxed">
+                तारा न भाग्यं निर्णेतुं। ते चिंतनं आमंत्रयन्ति।<br/>
+                Stars do not decide fate. They invite reflection.
+              </p>
+              <div className="flex items-center justify-between border-t border-amber-900/30 pt-4">
+                <span className="text-[10px] text-amber-500 font-bold uppercase tracking-[0.4em]">Access Lineage</span>
+                <ArrowUpRight size={14} className="text-amber-500 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+              </div>
+            </div>
+          </Link>
         </aside>
         
         {/* Main Content: Karma Logs and Legacy */}
