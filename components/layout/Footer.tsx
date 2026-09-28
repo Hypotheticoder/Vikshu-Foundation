@@ -19,17 +19,17 @@ const Footer: React.FC = () => {
             <li className="hover:text-amber-500 transition-colors cursor-pointer">Infrastructural Mentoring</li>
           </ul>
         </div>
-        <div>
+        {/* <div>
           <h4 className="font-heading text-[10px] tracking-[0.3em] text-white mb-8 uppercase">Legacy</h4>
           <ul className="space-y-4 text-xs text-gray-500 font-bold tracking-widest uppercase italic">
             <li className="hover:text-amber-500 transition-colors cursor-pointer">Est. 1890</li>
             <li className="hover:text-amber-500 transition-colors cursor-pointer">Sanskrit-Victorian Roots</li>
             <li className="hover:text-amber-500 transition-colors cursor-pointer">Global Fellowship</li>
           </ul>
-        </div>
+        </div> */}
       </div>
       <div className="max-w-7xl mx-auto px-6 mt-20 pt-8 border-t border-white/5 text-center text-[10px] text-gray-600 font-bold tracking-widest uppercase">
-        © 2024 Vikshu Foundation. All Rights Reserved.
+        © 2025 Vikshu Foundation. All Rights Reserved.
       </div>
     </footer>
   );

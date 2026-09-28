@@ -1,29 +1,27 @@
 
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import Home from '../pages/Home';
-import Login from '../pages/auth/Login';
-import Register from '../pages/auth/Register';
-import Profile from '../pages/profile/Profile';
-import Sectors from '../pages/sectors/Sectors';
-import Support from '../pages/support/Support';
-import Donations from '../pages/donations/Donations';
-import Membership from '../pages/membership/Membership';
-import FellowshipEnrollment from '../pages/membership/FellowshipEnrollment';
-import FellowsDirectory from '../pages/membership/FellowsDirectory';
-import WisdomSearch from '../pages/heritage/WisdomSearch';
-import RestorationLab from '../pages/heritage/RestorationLab';
+const Home = React.lazy(() => import('../pages/Home'));
+const Login = React.lazy(() => import('../pages/auth/Login'));
+const Register = React.lazy(() => import('../pages/auth/Register'));
+const Profile = React.lazy(() => import('../pages/profile/Profile'));
+const Sectors = React.lazy(() => import('../pages/sectors/Sectors'));
+const Support = React.lazy(() => import('../pages/support/Support'));
+const Donations = React.lazy(() => import('../pages/donations/Donations'));
+const Membership = React.lazy(() => import('../pages/membership/Membership'));
+const FellowshipEnrollment = React.lazy(() => import('../pages/membership/FellowshipEnrollment'));
+const FellowsDirectory = React.lazy(() => import('../pages/membership/FellowsDirectory'));
+const WisdomSearch = React.lazy(() => import('../pages/heritage/WisdomSearch'));
+const RestorationLab = React.lazy(() => import('../pages/heritage/RestorationLab'));
+import { useStore } from './store/useStore';
 
-interface AppRoutesProps {
-  isAuthenticated: boolean;
-  onLogin: () => void;
-}
+const AppRoutes: React.FC = () => {
+  const isAuthenticated = useStore((state) => state.isAuthenticated);
 
-const AppRoutes: React.FC<AppRoutesProps> = ({ isAuthenticated, onLogin }) => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/auth/login" element={<Login onLogin={onLogin} />} />
+      <Route path="/auth/login" element={<Login />} />
       <Route path="/auth/register" element={<Register />} />
       <Route path="/sectors" element={<Sectors />} />
       <Route path="/support" element={<Support />} />

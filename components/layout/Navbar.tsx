@@ -13,16 +13,11 @@ import {
   FileText,
 } from "lucide-react";
 import i18n from "../../i18n/i18n";
+import { useStore } from "../../app/store/useStore";
 
-interface NavbarProps {
-  isAuthenticated: boolean;
-  setIsAuthenticated: (val: boolean) => void;
-}
-
-const Navbar: React.FC<NavbarProps> = ({
-  isAuthenticated,
-  setIsAuthenticated,
-}) => {
+const Navbar: React.FC = () => {
+  const isAuthenticated = useStore((state) => state.isAuthenticated);
+  const setLanguage = useStore((state) => state.setLanguage);
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
@@ -123,6 +118,7 @@ const Navbar: React.FC<NavbarProps> = ({
                     className="w-full text-left px-4 py-3 hover:bg-white/5"
                     onClick={() => {
                       i18n.changeLanguage("en");
+                      setLanguage("en");
                       setLangOpen(false);
                     }}
                   >
@@ -132,6 +128,7 @@ const Navbar: React.FC<NavbarProps> = ({
                     className="w-full text-left px-4 py-3 hover:bg-white/5"
                     onClick={() => {
                       i18n.changeLanguage("bn");
+                      setLanguage("bn");
                       setLangOpen(false);
                     }}
                   >
@@ -141,6 +138,7 @@ const Navbar: React.FC<NavbarProps> = ({
                     className="w-full text-left px-4 py-3 hover:bg-white/5"
                     onClick={() => {
                       i18n.changeLanguage("hi");
+                      setLanguage("hi");
                       setLangOpen(false);
                     }}
                   >
@@ -150,6 +148,7 @@ const Navbar: React.FC<NavbarProps> = ({
                     className="w-full text-left px-4 py-3 hover:bg-white/5"
                     onClick={() => {
                       i18n.changeLanguage("as");
+                      setLanguage("as");
                       setLangOpen(false);
                     }}
                   >
@@ -223,6 +222,7 @@ const Navbar: React.FC<NavbarProps> = ({
               <button
                 onClick={() => {
                   i18n.changeLanguage("en");
+                  setLanguage("en");
                   setIsOpen(false);
                 }}
                 className="px-4 py-2 rounded-full bg-white/5 hover:bg-white/10"
@@ -232,6 +232,7 @@ const Navbar: React.FC<NavbarProps> = ({
               <button
                 onClick={() => {
                   i18n.changeLanguage("bn");
+                  setLanguage("bn");
                   setIsOpen(false);
                 }}
                 className="px-4 py-2 rounded-full bg-white/5 hover:bg-white/10"
@@ -241,6 +242,7 @@ const Navbar: React.FC<NavbarProps> = ({
               <button
                 onClick={() => {
                   i18n.changeLanguage("hi");
+                  setLanguage("hi");
                   setIsOpen(false);
                 }}
                 className="px-4 py-2 rounded-full bg-white/5 hover:bg-white/10"
@@ -250,6 +252,7 @@ const Navbar: React.FC<NavbarProps> = ({
               <button
                 onClick={() => {
                   i18n.changeLanguage("as");
+                  setLanguage("as");
                   setIsOpen(false);
                 }}
                 className="px-4 py-2 rounded-full bg-white/5 hover:bg-white/10"

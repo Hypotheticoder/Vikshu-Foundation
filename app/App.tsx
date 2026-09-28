@@ -1,5 +1,5 @@
-import React, { useState, Suspense } from "react";
-import { HashRouter } from "react-router-dom";
+import React, { Suspense } from "react";
+import { BrowserRouter } from "react-router-dom";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import ScrollToTop from "../components/utils/ScrollToTop";
@@ -18,28 +18,20 @@ const LoadingFallback = () => (
 );
 
 const App: React.FC = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-
   return (
     <Suspense fallback={<LoadingFallback />}>
-      <HashRouter>
+      <BrowserRouter>
         <ScrollToTop />
         <div className="min-h-screen flex flex-col bg-[#0c0c0c] text-white selection:bg-amber-600/30 selection:text-amber-500">
-          <Navbar
-            isAuthenticated={isAuthenticated}
-            setIsAuthenticated={setIsAuthenticated}
-          />
+          <Navbar />
 
           <main className="flex-grow pt-20 md:pt-28">
-            <AppRoutes
-              isAuthenticated={isAuthenticated}
-              onLogin={() => setIsAuthenticated(true)}
-            />
+            <AppRoutes />
           </main>
 
           <Footer />
         </div>
-      </HashRouter>
+      </BrowserRouter>
     </Suspense>
   );
 };

@@ -289,13 +289,13 @@ const Donations: React.FC = () => {
                         onClick={() => setAmount(p)}
                         className={`py-4 rounded-2xl text-xs font-heading tracking-widest transition-all border ${amount === p ? "bg-amber-600 border-amber-600 text-white" : "bg-white/5 border-white/10 text-gray-500 hover:border-amber-500/30"}`}
                       >
-                        ${p}
+                        ₹{p}
                       </button>
                     ))}
                   </div>
                   <div className="relative">
                     <span className="absolute left-8 top-1/2 -translate-y-1/2 text-amber-500 font-serif-vintage text-3xl">
-                      $
+                      ₹
                     </span>
                     <input
                       type="number"

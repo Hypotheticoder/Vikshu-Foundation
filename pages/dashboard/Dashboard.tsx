@@ -122,7 +122,7 @@ const Dashboard: React.FC = () => {
                     </div>
                   </div>
                   <div className="text-right">
-                    <p className="text-amber-500 font-bold">$1,200.00</p>
+                    <p className="text-amber-500 font-bold">₹1,200.00</p>
                     <p className="text-[10px] text-green-500 uppercase font-bold">Verified</p>
                   </div>
                 </div>

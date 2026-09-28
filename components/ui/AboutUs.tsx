@@ -134,7 +134,7 @@ const AboutUs: React.FC = () => {
                 >
                   <img
                     src="/assets/satabdi.jpeg"
-                    alt="Capt. Satabdi Chatterjee - Director & Chief Advisor"
+                    alt="Capt. Satabdi Chatterjee - Mentor(Alternative Studies)"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     onError={(e) => {
                       e.currentTarget.src =
@@ -174,7 +174,7 @@ const AboutUs: React.FC = () => {
                 </h3>
                 <div className="space-y-2">
                   <p className="text-sm uppercase tracking-[0.4em] font-heading text-gray-400">
-                    Director
+                    Mentor
                   </p>
                   <div className="flex items-center justify-center gap-2 opacity-60">
                     <div className="w-1 h-1 bg-amber-500 rounded-full"></div>
@@ -182,7 +182,7 @@ const AboutUs: React.FC = () => {
                     <div className="w-1 h-1 bg-amber-500 rounded-full"></div>
                   </div>
                   <p className="text-xs uppercase tracking-[0.3em] font-heading text-gray-500">
-                    Chief Mentor
+                    (Alternative Studies)
                   </p>
                 </div>
 
