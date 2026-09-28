@@ -31,7 +31,7 @@ const Profile: React.FC = () => {
               </div>
               <div className="text-center border-l border-white/5">
                 <span className="block text-2xl font-bold text-amber-500">12</span>
-                <span className="text-[9px] text-gray-500 uppercase font-bold tracking-widest">Offerings</span>
+                <span className="text-[9px] text-gray-500 uppercase font-bold tracking-widest">Viksha</span>
               </div>
             </div>
 

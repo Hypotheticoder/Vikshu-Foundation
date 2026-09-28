@@ -260,7 +260,6 @@ const Donations: React.FC = () => {
               <div className="flex items-center justify-between mb-12">
                 <div>
                   <h3 className="text-3xl md:text-4xl font-serif-vintage italic mb-2 capitalize">
-                    {activeTab}{" "}
                     <span className="text-amber-500">{t("form.title")}</span>
                   </h3>
                   <p className="text-xs text-gray-500 uppercase tracking-widest font-bold">
@@ -281,18 +280,7 @@ const Donations: React.FC = () => {
                   <label className="text-[10px] uppercase tracking-widest text-amber-500 font-bold ml-1">
                     {t("form.amountLabel")}
                   </label>
-                  <div className="grid grid-cols-5 gap-3">
-                    {presets.map((p) => (
-                      <button
-                        key={p}
-                        type="button"
-                        onClick={() => setAmount(p)}
-                        className={`py-4 rounded-2xl text-xs font-heading tracking-widest transition-all border ${amount === p ? "bg-amber-600 border-amber-600 text-white" : "bg-white/5 border-white/10 text-gray-500 hover:border-amber-500/30"}`}
-                      >
-                        ₹{p}
-                      </button>
-                    ))}
-                  </div>
+
                   <div className="relative">
                     <span className="absolute left-8 top-1/2 -translate-y-1/2 text-amber-500 font-serif-vintage text-3xl">
                       ₹

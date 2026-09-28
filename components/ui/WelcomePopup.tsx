@@ -48,7 +48,7 @@ const WelcomePopup: React.FC = () => {
           ease: [0.22, 1, 0.36, 1],
           delay: 0.1,
         }}
-        className="relative glass rounded-2xl sm:rounded-[4rem] border border-amber-500/40 shadow-2xl max-w-4xl w-full overflow-hidden"
+        className="relative glass rounded-2xl sm:rounded-[4rem] border border-amber-500/40 shadow-2xl max-w-4xl w-full overflow-hidden max-h-[90vh] flex flex-col"
         style={{ perspective: "1000px" }}
       >
         {/* Multiple decorative gradients */}
@@ -72,7 +72,7 @@ const WelcomePopup: React.FC = () => {
           <X size={20} className="sm:w-6 sm:h-6" />
         </motion.button>
 
-        <div className="relative p-4 sm:p-8 md:p-16">
+        <div className="relative p-5 pt-16 sm:p-8 sm:pt-8 md:p-16 overflow-y-auto flex-1">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 items-center">
             {/* LEFT SIDE - Enhanced Image Section */}
             <motion.div
@@ -97,7 +97,7 @@ const WelcomePopup: React.FC = () => {
                     repeat: Infinity,
                     ease: "easeInOut",
                   }}
-                  className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 bg-gradient-to-r from-amber-500/40 to-amber-600/40 rounded-full blur-3xl"
+                  className="w-32 h-32 sm:w-64 sm:h-64 md:w-80 md:h-80 bg-gradient-to-r from-amber-500/40 to-amber-600/40 rounded-full blur-3xl"
                 ></motion.div>
               </div>
 
@@ -119,7 +119,7 @@ const WelcomePopup: React.FC = () => {
                 ></motion.div>
 
                 {/* Image container */}
-                <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-96 md:h-96 rounded-full overflow-hidden border-4 sm:border-8 border-amber-500/50 shadow-2xl shadow-amber-900/50 bg-gradient-to-br from-amber-900/20 to-amber-600/20">
+                <div className="relative w-32 h-32 sm:w-64 sm:h-64 md:w-96 md:h-96 rounded-full overflow-hidden border-4 sm:border-8 border-amber-500/50 shadow-2xl shadow-amber-900/50 bg-gradient-to-br from-amber-900/20 to-amber-600/20">
                   <motion.img
                     initial={{ scale: 1.2, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}

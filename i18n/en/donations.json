@@ -2,17 +2,17 @@
   "header": {
     "subtitle": "Manifesting Abundance",
     "title": "Sacred",
-    "titleHighlight": "Offerings",
+    "titleHighlight": "Viksha",
     "description": "\"The act of giving is the highest form of self-illumination. Choose thy path of contribution to the universal welfare.\""
   },
   "success": {
-    "title": "Offering",
+    "title": "Viksha",
     "titleHighlight": "Accepted",
     "description": "\"Thy generosity has been etched into the lineage of the Vikshu Foundation. Like a ripple in a sacred lake, your contribution will touch lives far beyond the horizon.\"",
     "button": "Peace be upon thee"
   },
   "donationTypes": {
-    "title": "Offering Modality",
+    "title": "Viksha Modality",
     "general": {
       "name": "General",
       "desc": "Flexible support for immediate humanitarian needs."
@@ -27,17 +27,17 @@
     }
   },
   "form": {
-    "title": "Offering",
+    "title": "Viksha",
     "resonance": "Resonance Level: High Sanctity",
-    "amountLabel": "Thy Bounty (USD)",
-    "customPlaceholder": "Custom Offering",
+    "amountLabel": "Thy Bounty (INR)",
+    "customPlaceholder": "Custom Viksha",
     "nameLabel": "Thy Nomenclature",
     "namePlaceholder": "e.g. Aarya Vardhan",
     "emailLabel": "Email Essence",
     "emailPlaceholder": "scribe@lineage.org",
     "intentLabel": "Sacred Intent",
     "intentPlaceholder": "Describe the soul of this contribution...",
-    "submitButton": "Commit Sacred Offering"
+    "submitButton": "Commit Sacred Viksha"
   },
   "membership": {
     "subtitle": "Fellowship Lineage",

@@ -161,7 +161,7 @@ const Navbar: React.FC = () => {
               to="/donations"
               className="flex items-center gap-2 px-5 py-2 bg-amber-600 text-white rounded-full hover:bg-amber-500 transition-all shadow-lg shadow-amber-900/20 whitespace-nowrap"
             >
-              <Heart size={12} /> Offerings
+              <Heart size={12} /> Viksha
             </Link>
 
             {isAuthenticated ? (
