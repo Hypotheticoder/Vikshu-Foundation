@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: attendx_frontend
+    ports:
+      - "3007:3007"
+    restart: unless-stopped
+    networks:
+      - attendx_net
+
+networks:
+  attendx_net:
+    driver: bridge
