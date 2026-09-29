@@ -45,7 +45,7 @@ const DharmaBharatTeaser: React.FC = () => {
             className="flex justify-center mb-6"
           >
             <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border border-amber-500/30 shadow-2xl p-1 bg-black/40 backdrop-blur-md">
-              <img src="/assets/dharma bharat.jpeg" alt="Dharma Bharat Logo" className="w-full h-full object-cover rounded-full" />
+              <img src="/assets/dharma bharat.png" alt="Dharma Bharat Logo" className="w-full h-full object-cover rounded-full" />
             </div>
           </motion.div>
 

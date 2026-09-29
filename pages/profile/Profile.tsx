@@ -59,7 +59,7 @@ const Profile: React.FC = () => {
           </div>
 
           <Link to="/spiritual-life" className="block relative w-full h-[400px] rounded-[3.5rem] overflow-hidden group border border-white/10 hover:border-amber-500/30 transition-all shadow-2xl">
-            <img src="/assets/dharma bharat.jpeg" alt="Japa Mala" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-60" style={{ objectPosition: "center center" }} />
+            <img src="/assets/dharma bharat.png" alt="Japa Mala" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-60" style={{ objectPosition: "center center" }} />
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/80"></div>
             <div className="absolute top-6 left-6 w-12 h-12 bg-amber-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-amber-900/40">
               <Moon size={24} />

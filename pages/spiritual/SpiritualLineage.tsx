@@ -53,7 +53,7 @@ const SpiritualLineage: React.FC = () => {
         >
           <div className="absolute inset-0 bg-amber-500/30 blur-3xl rounded-full scale-150"></div>
           <img
-            src="/assets/dharma bharat.jpeg"
+            src="/assets/dharma bharat.png"
             alt="Dharma Bharat Logo"
             className="w-28 h-28 sm:w-36 sm:h-36 md:w-48 md:h-48 object-cover rounded-full border-4 border-amber-500/50 shadow-2xl relative z-10"
           />

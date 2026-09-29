@@ -12,7 +12,6 @@ import {
 import { useTranslation } from "react-i18next";
 import NGOPost from "../components/ui/NGOPost";
 import QuoteBlock from "../components/ui/QuoteBlock";
-import WelcomePopup from "../components/ui/WelcomePopup";
 import AboutUs from "../components/ui/AboutUs";
 import DharmaBharatTeaser from "../components/ui/DharmaBharatTeaser";
 
@@ -39,8 +38,6 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <WelcomePopup />
-
       <div className="relative px-6 pb-20 overflow-hidden">
         {/* Background Ambience */}
         <div className="fixed inset-0 pointer-events-none overflow-hidden -z-10">
