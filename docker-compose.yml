@@ -5,13 +5,13 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.frontend
-    container_name: attendx_frontend
+    container_name: vikshu_frontend
     ports:
       - "3007:3007"
     restart: unless-stopped
     networks:
-      - attendx_net
+      - vikshu_net
 
 networks:
-  attendx_net:
+  vikshu_net:
     driver: bridge
