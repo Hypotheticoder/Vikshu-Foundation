@@ -28,49 +28,36 @@ const SatvikPujaBanner: React.FC<SatvikPujaBannerProps> = ({
         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         className="rounded-[2.5rem] p-6 sm:p-10 md:p-12 shadow-2xl relative overflow-hidden transition-all border border-[#d2b48c]/30 text-[#1a2b49] bg-[#fbf8f1]"
       >
-        {/* Header: Logo + Presentation Header */}
-        <div className="flex items-center gap-4 sm:gap-6 pb-6 border-b border-[#c89d5b]/30">
-          <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-white/90 p-2 shadow-md flex items-center justify-center border border-[#d2b48c]/40 shrink-0">
-            {/* Sacred Om Yantra Emblem */}
-            <svg
-              viewBox="0 0 100 100"
-              className="w-full h-full text-red-700"
-              fill="none"
-              stroke="currentColor"
-            >
-              <circle cx="50" cy="50" r="44" stroke="#c89d5b" strokeWidth="2.5" />
-              <circle cx="50" cy="50" r="39" stroke="#b91c1c" strokeWidth="1.5" strokeDasharray="3 2" />
-              <polygon
-                points="50,15 62,35 85,38 68,55 72,78 50,67 28,78 32,55 15,38 38,35"
-                stroke="#c89d5b"
-                strokeWidth="1.2"
-                fill="#fef2f2"
-              />
-              {/* Om symbol glyph */}
-              <text
-                x="50"
-                y="59"
-                fontSize="34"
-                textAnchor="middle"
-                fontWeight="bold"
-                fill="#991b1b"
-                className="font-serif select-none"
-              >
-                ॐ
-              </text>
-            </svg>
+        {/* Header: Logo + Presentation Header (Middle Aligned) */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pb-6 border-b border-[#c89d5b]/30 text-center">
+          {/* Primary Logo: Swattik Puja Sanman */}
+          <div className="w-20 h-20 rounded-2xl bg-white p-1.5 shadow-md flex items-center justify-center border border-[#d2b48c]/50 shrink-0 overflow-hidden">
+            <img
+              src="/assets/swattik puja sanman.png"
+              alt="Satvik Puja Samman Logo"
+              className="w-full h-full object-contain"
+            />
           </div>
 
-          <div>
+          <div className="text-center">
             <span className="text-[10px] sm:text-xs uppercase tracking-[0.25em] font-bold text-[#9e763b] block mb-0.5">
               {t("satvikPuja.badge", "VIKSHU FOUNDATION PRESENTS")}
             </span>
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#142952] tracking-tight leading-snug">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#142952] tracking-tight leading-snug">
               {t("satvikPuja.titleBengali", "সাত্ত্বিক পূজা সম্মান ২০২৬")}
             </h2>
             <p className="text-xs sm:text-sm text-[#4b5563] italic">
               {t("satvikPuja.titleEnglish", "Satvik Puja Samman 2026")}
             </p>
+          </div>
+
+          {/* Secondary Co-Partner Logo */}
+          <div className="w-20 h-20 rounded-2xl bg-white p-1.5 shadow-md flex items-center justify-center border border-[#d2b48c]/50 shrink-0 overflow-hidden">
+            <img
+              src="/assets/LOGO (1).png"
+              alt="Vikshu Foundation Logo"
+              className="w-full h-full object-contain"
+            />
           </div>
         </div>
 
@@ -90,26 +77,26 @@ const SatvikPujaBanner: React.FC<SatvikPujaBannerProps> = ({
           </div>
         </div>
 
-        {/* Content Section */}
-        <div className="mt-8">
+        {/* Content Section (Middle Aligned) */}
+        <div className="mt-8 text-center flex flex-col items-center">
           <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#142952] mb-3 leading-snug">
             {t("satvikPuja.headline", "আপনার পূজা মণ্ডপকে নিবন্ধন করুন")}
           </h3>
 
-          <p className="text-sm sm:text-base text-[#475569] leading-relaxed mb-6 font-normal">
+          <p className="text-sm sm:text-base text-[#475569] leading-relaxed mb-6 font-normal max-w-2xl mx-auto">
             {t("satvikPuja.description", "সাত্ত্বিকতা, শুদ্ধতা, শৃঙ্খলা ও সমাজসেবার উদযাপনে অংশ নিন। আপনার পূজা কমিটিকে সাত্তিক পূজা সম্মান ২০২৬-এর জন্য নিবন্ধন করুন।")}
           </p>
 
-          {/* Feature Badges */}
-          <div className="space-y-3 mb-8">
-            <div className="flex items-center gap-3 text-xs sm:text-sm text-[#334155] font-medium">
+          {/* Feature Badges (Centered) */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mb-8">
+            <div className="flex items-center gap-2.5 text-xs sm:text-sm text-[#334155] font-medium">
               <span className="w-5 h-5 rounded-full border border-[#9e763b] flex items-center justify-center text-[#9e763b] shrink-0">
                 <CheckCircle2 size={13} strokeWidth={2.5} />
               </span>
               <span>{t("satvikPuja.featureJudging", "Online & Offline Judging")}</span>
             </div>
 
-            <div className="flex items-center gap-3 text-xs sm:text-sm text-[#334155] font-medium">
+            <div className="flex items-center gap-2.5 text-xs sm:text-sm text-[#334155] font-medium">
               <span className="w-5 h-5 rounded border border-[#9e763b] flex items-center justify-center text-[#9e763b] shrink-0">
                 <Video size={13} strokeWidth={2} />
               </span>

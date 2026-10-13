@@ -16,13 +16,32 @@ export const RegistrationHeader: React.FC = () => {
         </Link>
       </div>
 
-      {/* Header Titles & Badges */}
+      {/* Header Titles, Logos & Badges */}
       <div className="text-center mb-10 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
+          {/* Logos Display */}
+          <div className="flex items-center justify-center gap-6 sm:gap-10 mb-6">
+            <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-white p-2 shadow-xl border border-amber-500/30 flex items-center justify-center overflow-hidden hover:scale-105 transition-transform duration-300">
+              <img
+                src="/assets/swattik puja sanman.png"
+                alt="Satvik Puja Samman Logo"
+                className="w-full h-full object-contain"
+              />
+            </div>
+
+            <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-white p-2 shadow-xl border border-amber-500/30 flex items-center justify-center overflow-hidden hover:scale-105 transition-transform duration-300">
+              <img
+                src="/assets/LOGO (1).png"
+                alt="Vikshu Foundation / Hindu Mission Logo"
+                className="w-full h-full object-contain"
+              />
+            </div>
+          </div>
+
           <div className="inline-flex items-center gap-2 px-4 py-1.5 glass rounded-full border border-amber-600/30 mb-4 bg-black/40">
             <Sparkles size={13} className="text-amber-500" />
             <span className="text-amber-400 font-heading text-[10px] tracking-[0.25em] uppercase">

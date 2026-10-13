@@ -64,8 +64,12 @@ const Navbar: React.FC = () => {
         } flex items-center justify-between relative`}
       >
         <Link to="/" className="flex items-center gap-3 group shrink-0">
-          <div className="w-10 h-10 bg-amber-600 rounded-full flex items-center justify-center text-black font-bold text-xl font-heading transition-transform group-hover:scale-110">
-            V
+          <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full overflow-hidden bg-white/90 p-0.5 border border-amber-500/40 shadow-lg flex items-center justify-center transition-transform group-hover:scale-110">
+            <img
+              src="/assets/swattik puja sanman.png"
+              alt="Satvik Puja Logo"
+              className="w-full h-full object-contain"
+            />
           </div>
           <span className="font-heading text-sm sm:text-lg md:text-xl tracking-[0.25em] block">
             VIKSHU
