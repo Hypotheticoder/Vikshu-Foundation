@@ -14,6 +14,7 @@ import NGOPost from "../components/ui/NGOPost";
 import QuoteBlock from "../components/ui/QuoteBlock";
 import AboutUs from "../components/ui/AboutUs";
 import DharmaBharatTeaser from "../components/ui/DharmaBharatTeaser";
+import SatvikPujaBanner from "../components/ui/SatvikPujaBanner";
 
 const Home: React.FC = () => {
   const { t } = useTranslation("home");
@@ -149,6 +150,9 @@ const Home: React.FC = () => {
 
           {/* Dharma Bharat Teaser */}
           <DharmaBharatTeaser />
+
+          {/* Satvik Puja Samman 2026 Showcase */}
+          <SatvikPujaBanner />
 
           <AboutUs />
 
