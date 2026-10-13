@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Sparkles, ArrowLeft } from "lucide-react";
+import { Sparkles, ArrowLeft, FileText, Download } from "lucide-react";
 
 export const RegistrationHeader: React.FC = () => {
   return (
@@ -57,9 +57,27 @@ export const RegistrationHeader: React.FC = () => {
             Satvik Puja Samman 2026 — Registration Form
           </p>
 
-          <p className="text-xs sm:text-sm text-gray-400 max-w-lg mx-auto leading-relaxed">
+          <p className="text-xs sm:text-sm text-gray-400 max-w-lg mx-auto leading-relaxed mb-6">
             আপনার পূজা মণ্ডপকে সাত্তিক পূজা সম্মানের জন্য দ্রুত ও সহজে নিবন্ধন করুন।
           </p>
+
+          {/* Quick PDF Rules Download Banner */}
+          <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-2xl glass border border-amber-500/30 hover:border-amber-500/60 bg-amber-600/10 text-xs transition-all shadow-lg group">
+            <FileText size={16} className="text-amber-400 shrink-0" />
+            <span className="text-gray-200">
+              নিয়মাবলী ও নির্দেশিকা ডাউনলোড করুন:
+            </span>
+            <a
+              href="/assets/pdf/swattik%20puja%20sanman.pdf"
+              download="swattik_puja_sanman_rules_2026.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 font-bold text-amber-400 hover:text-amber-300 underline underline-offset-4"
+            >
+              <Download size={13} />
+              <span>Rules PDF</span>
+            </a>
+          </div>
         </motion.div>
       </div>
     </>

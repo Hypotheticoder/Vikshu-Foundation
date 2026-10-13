@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { CheckCircle2, Video, ArrowRight, ArrowDown } from "lucide-react";
+import { CheckCircle2, Video, ArrowRight, ArrowDown, FileText, Download } from "lucide-react";
 
 interface SatvikPujaBannerProps {
   className?: string;
@@ -102,6 +102,34 @@ const SatvikPujaBanner: React.FC<SatvikPujaBannerProps> = ({
               </span>
               <span>{t("satvikPuja.featureRegistration", "Club Registration & Video Submission")}</span>
             </div>
+          </div>
+
+          {/* Rules & Guidelines Section with PDF Download */}
+          <div className="w-full mb-8 p-5 sm:p-6 rounded-2xl bg-white/70 border border-[#d2b48c]/60 shadow-md flex flex-col sm:flex-row items-center justify-between gap-4 text-left">
+            <div className="flex items-center gap-3.5">
+              <div className="w-12 h-12 rounded-xl bg-[#931b2c]/10 text-[#931b2c] border border-[#931b2c]/20 flex items-center justify-center shrink-0 shadow-sm">
+                <FileText size={24} strokeWidth={2} />
+              </div>
+              <div>
+                <h4 className="text-base sm:text-lg font-bold text-[#142952] leading-tight">
+                  নিয়মাবলী ও নির্দেশিকা (Rules & Guidelines)
+                </h4>
+                <p className="text-xs text-[#556987] mt-0.5">
+                  সাত্ত্বিক পূজা সম্মান ২০২৬-এর বিশদ নিয়মাবলী জানতে অফিসিয়াল পিডিএফ ডাউনলোড করুন।
+                </p>
+              </div>
+            </div>
+
+            <a
+              href="/assets/pdf/swattik%20puja%20sanman.pdf"
+              download="swattik_puja_sanman_rules_2026.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-2.5 rounded-xl bg-[#142952] hover:bg-[#1f3a70] text-white text-xs sm:text-sm font-semibold flex items-center gap-2 shadow-md hover:shadow-lg transition-all duration-300 shrink-0 group active:scale-95"
+            >
+              <Download size={16} className="group-hover:translate-y-0.5 transition-transform" />
+              <span>Download Rules PDF</span>
+            </a>
           </div>
 
           {/* CTA Action Button */}
