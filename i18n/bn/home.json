@@ -74,15 +74,21 @@
     "signature": "ভিক্ষু ফেলোশিপ"
   },
   "satvikPuja": {
-    "badge": "VIKSHU FOUNDATION PRESENTS",
+    "badge": "ভিক্ষু ফাউন্ডেশন উপস্থাপন করে",
     "titleBengali": "সাত্ত্বিক পূজা সম্মান ২০২৬",
     "titleEnglish": "Satvik Puja Samman 2026",
     "sourceUrl": "panchangbodh.com",
     "headline": "আপনার পূজা মণ্ডপকে নিবন্ধন করুন",
     "description": "সাত্ত্বিকতা, শুদ্ধতা, শৃঙ্খলা ও সমাজসেবার উদযাপনে অংশ নিন। আপনার পূজা কমিটিকে সাত্তিক পূজা সম্মান ২০২৬-এর জন্য নিবন্ধন করুন।",
-    "featureJudging": "Online & Offline Judging",
-    "featureRegistration": "Club Registration & Video Submission",
-    "buttonText": "Register Your Puja Club",
-    "subtext": "Registration form opens on the next page"
+    "featureJudging": "অনলাইন ও অফলাইন বিচার",
+    "featureRegistration": "ক্লাব নিবন্ধন ও সম্মান",
+    "rulesTitle": "নিয়মাবলী ও নির্দেশিকা",
+    "rulesDesc": "সাত্ত্বিক পূজা সম্মান ২০২৬-এর বিশদ নিয়মাবলী জানতে অফিসিয়াল পিডিএফ ডাউনলোড করুন।",
+    "downloadBtn": "নিয়মাবলী পিডিএফ ডাউনলোড করুন",
+    "buttonText": "আপনার পূজা ক্লাব নিবন্ধন করুন",
+    "subtext": "নিবন্ধন ফর্মটি পরবর্তী পাতায় খুলবে",
+    "backHome": "হোমপেজে ফিরে যান",
+    "formLabel": "নিবন্ধন ফর্ম",
+    "formDesc": "সাত্তিক পূজা সম্মান ২০২৬-এর জন্য আপনার পূজা মণ্ডপকে দ্রুত ও সহজে নিবন্ধন করুন।"
   }
 }

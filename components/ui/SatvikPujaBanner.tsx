@@ -2,7 +2,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { CheckCircle2, Video, ArrowRight, ArrowDown, FileText, Download } from "lucide-react";
+import {
+  CheckCircle2,
+  ArrowRight,
+  FileText,
+  Download,
+  Sparkles,
+} from "lucide-react";
 
 interface SatvikPujaBannerProps {
   className?: string;
@@ -16,106 +22,122 @@ const SatvikPujaBanner: React.FC<SatvikPujaBannerProps> = ({
   const { t } = useTranslation("home");
 
   return (
-    <section className={`w-full max-w-4xl mx-auto my-20 px-4 sm:px-6 relative ${className}`}>
-      {/* Ambient background glow adhering to design architecture */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-amber-600/5 blur-[120px] rounded-full -z-10 pointer-events-none" />
+    <section
+      className={`w-full max-w-4xl mx-auto my-20 px-4 sm:px-6 relative ${className}`}
+    >
+      {/* Ambient glows matching site design language */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-amber-600/8 blur-[140px] rounded-full -z-10 pointer-events-none" />
+      <div className="absolute -top-24 -right-24 w-80 h-80 bg-[#931b2c]/8 blur-[120px] rounded-full -z-10 pointer-events-none" />
 
-      {/* Main Card with soft border and warm ivory/dark luxury styling */}
+      {/* Main Card — dark glassmorphic matching site design */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-        className="rounded-[2.5rem] p-6 sm:p-10 md:p-12 shadow-2xl relative overflow-hidden transition-all border border-[#d2b48c]/30 text-[#1a2b49] bg-[#fbf8f1]"
+        className="glass rounded-[2.5rem] p-6 sm:p-10 md:p-12 shadow-2xl relative overflow-hidden border border-amber-600/20"
       >
-        {/* Header: Logo + Presentation Header (Middle Aligned) */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pb-6 border-b border-[#c89d5b]/30 text-center">
-          {/* Primary Logo: Swattik Puja Sanman */}
-          <div className="w-20 h-20 rounded-2xl bg-white p-1.5 shadow-md flex items-center justify-center border border-[#d2b48c]/50 shrink-0 overflow-hidden">
-            <img
-              src="/assets/swattik puja sanman.png"
-              alt="Satvik Puja Samman Logo"
-              className="w-full h-full object-contain"
-            />
-          </div>
+        {/* Subtle inner gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-amber-600/5 via-transparent to-[#931b2c]/5 pointer-events-none rounded-[2.5rem]" />
 
-          <div className="text-center">
-            <span className="text-[10px] sm:text-xs uppercase tracking-[0.25em] font-bold text-[#9e763b] block mb-0.5">
+        {/* Header: Logos + Badge + Titles */}
+        <div className="relative z-10 flex flex-col items-center text-center gap-5 pb-8 border-b border-white/10">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 glass rounded-full border border-amber-600/30 bg-black/40">
+            <Sparkles size={12} className="text-amber-500" />
+            <span className="text-amber-400 font-heading text-[9px] sm:text-[10px] tracking-[0.3em] uppercase">
               {t("satvikPuja.badge", "VIKSHU FOUNDATION PRESENTS")}
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#142952] tracking-tight leading-snug">
+          </div>
+
+          {/* Dual logos */}
+          <div className="flex items-center justify-center gap-6 sm:gap-10">
+            <div className="w-18 h-18 sm:w-20 sm:h-20 rounded-2xl bg-white/90 p-1.5 shadow-xl border border-amber-500/30 flex items-center justify-center overflow-hidden hover:scale-105 transition-transform duration-300 shrink-0">
+              <img
+                src="/assets/swattik puja sanman.png"
+                alt="Satvik Puja Samman Logo"
+                className="w-full h-full object-contain"
+              />
+            </div>
+
+            <div className="w-18 h-18 sm:w-20 sm:h-20 rounded-2xl bg-white/90 p-1.5 shadow-xl border border-amber-500/30 flex items-center justify-center overflow-hidden hover:scale-105 transition-transform duration-300 shrink-0">
+              <img
+                src="/assets/LOGO (1).png"
+                alt="Vikshu Foundation Logo"
+                className="w-full h-full object-contain"
+              />
+            </div>
+          </div>
+
+          {/* Title stack */}
+          <div>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif-vintage italic text-white tracking-tight leading-snug mb-1">
               {t("satvikPuja.titleBengali", "সাত্ত্বিক পূজা সম্মান ২০২৬")}
             </h2>
-            <p className="text-xs sm:text-sm text-[#4b5563] italic">
+            <p className="text-xs sm:text-sm text-amber-300/80 italic font-medium">
               {t("satvikPuja.titleEnglish", "Satvik Puja Samman 2026")}
             </p>
           </div>
-
-          {/* Secondary Co-Partner Logo */}
-          <div className="w-20 h-20 rounded-2xl bg-white p-1.5 shadow-md flex items-center justify-center border border-[#d2b48c]/50 shrink-0 overflow-hidden">
-            <img
-              src="/assets/LOGO (1).png"
-              alt="Vikshu Foundation Logo"
-              className="w-full h-full object-contain"
-            />
-          </div>
         </div>
 
-        {/* Hero Image Showcase */}
-        <div className="mt-6 rounded-2xl sm:rounded-3xl overflow-hidden relative shadow-lg group border border-[#142952]/10 aspect-[16/10] sm:aspect-[16/9] bg-black">
+        {/* Hero Image */}
+        <div className="relative z-10 mt-8 rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl group border border-white/10 aspect-[16/10] sm:aspect-[16/9] bg-black">
           <img
             src="/assets/satvik-puja.jpg"
             alt="Satvik Puja Celebration"
-            className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+            className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out opacity-90"
           />
-          {/* Subtle bottom gradient */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
-
-          {/* Watermark / Domain badge pill */}
-          <div className="absolute bottom-4 left-4 glass px-3.5 py-1 rounded-full text-[11px] text-white/90 bg-black/40 backdrop-blur-md border border-white/20 select-none">
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent pointer-events-none" />
+          <div className="absolute bottom-4 left-4 glass px-3.5 py-1 rounded-full text-[11px] text-white/80 backdrop-blur-md border border-white/15 select-none">
             {t("satvikPuja.sourceUrl", "panchangbodh.com")}
           </div>
         </div>
 
-        {/* Content Section (Middle Aligned) */}
-        <div className="mt-8 text-center flex flex-col items-center">
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#142952] mb-3 leading-snug">
+        {/* Content body — centred */}
+        <div className="relative z-10 mt-8 text-center flex flex-col items-center">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-serif-vintage italic text-white mb-3 leading-snug">
             {t("satvikPuja.headline", "আপনার পূজা মণ্ডপকে নিবন্ধন করুন")}
           </h3>
 
-          <p className="text-sm sm:text-base text-[#475569] leading-relaxed mb-6 font-normal max-w-2xl mx-auto">
-            {t("satvikPuja.description", "সাত্ত্বিকতা, শুদ্ধতা, শৃঙ্খলা ও সমাজসেবার উদযাপনে অংশ নিন। আপনার পূজা কমিটিকে সাত্তিক পূজা সম্মান ২০২৬-এর জন্য নিবন্ধন করুন।")}
+          <p className="text-sm sm:text-base text-gray-300 leading-relaxed mb-8 font-normal max-w-2xl mx-auto">
+            {t(
+              "satvikPuja.description",
+              "সাত্ত্বিকতা, শুদ্ধতা, শৃঙ্খলা ও সমাজসেবার উদযাপনে অংশ নিন। আপনার পূজা কমিটিকে সাত্তিক পূজা সম্মান ২০২৬-এর জন্য নিবন্ধন করুন।"
+            )}
           </p>
 
-          {/* Feature Badges (Centered) */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mb-8">
-            <div className="flex items-center gap-2.5 text-xs sm:text-sm text-[#334155] font-medium">
-              <span className="w-5 h-5 rounded-full border border-[#9e763b] flex items-center justify-center text-[#9e763b] shrink-0">
+          {/* Feature badges */}
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8 mb-8">
+            <div className="flex items-center gap-2.5 text-xs sm:text-sm text-amber-200/90 font-medium">
+              <span className="w-5 h-5 rounded-full border border-amber-500/60 flex items-center justify-center text-amber-400 shrink-0">
                 <CheckCircle2 size={13} strokeWidth={2.5} />
               </span>
               <span>{t("satvikPuja.featureJudging", "Online & Offline Judging")}</span>
             </div>
-
-            <div className="flex items-center gap-2.5 text-xs sm:text-sm text-[#334155] font-medium">
-              <span className="w-5 h-5 rounded border border-[#9e763b] flex items-center justify-center text-[#9e763b] shrink-0">
-                <Video size={13} strokeWidth={2} />
+            <div className="flex items-center gap-2.5 text-xs sm:text-sm text-amber-200/90 font-medium">
+              <span className="w-5 h-5 rounded-full border border-amber-500/60 flex items-center justify-center text-amber-400 shrink-0">
+                <CheckCircle2 size={13} strokeWidth={2.5} />
               </span>
-              <span>{t("satvikPuja.featureRegistration", "Club Registration & Video Submission")}</span>
+              <span>{t("satvikPuja.featureRegistration", "Club Registration & Recognition")}</span>
             </div>
           </div>
 
-          {/* Rules & Guidelines Section with PDF Download */}
-          <div className="w-full mb-8 p-5 sm:p-6 rounded-2xl bg-white/70 border border-[#d2b48c]/60 shadow-md flex flex-col sm:flex-row items-center justify-between gap-4 text-left">
+          {/* Rules & PDF Download box */}
+          <div className="w-full mb-8 p-5 sm:p-6 rounded-2xl glass border border-amber-500/25 flex flex-col sm:flex-row items-center justify-between gap-4 text-left bg-amber-600/5">
             <div className="flex items-center gap-3.5">
-              <div className="w-12 h-12 rounded-xl bg-[#931b2c]/10 text-[#931b2c] border border-[#931b2c]/20 flex items-center justify-center shrink-0 shadow-sm">
-                <FileText size={24} strokeWidth={2} />
+              <div className="w-11 h-11 rounded-xl bg-[#931b2c]/20 text-[#f87171] border border-[#931b2c]/30 flex items-center justify-center shrink-0 shadow-sm">
+                <FileText size={22} strokeWidth={2} />
               </div>
               <div>
-                <h4 className="text-base sm:text-lg font-bold text-[#142952] leading-tight">
-                  নিয়মাবলী ও নির্দেশিকা (Rules & Guidelines)
+                <h4 className="text-sm sm:text-base font-bold text-white leading-tight">
+                  {t("satvikPuja.rulesTitle", "নিয়মাবলী ও নির্দেশিকা")}
+                  <span className="text-gray-400 font-normal"> (Rules &amp; Guidelines)</span>
                 </h4>
-                <p className="text-xs text-[#556987] mt-0.5">
-                  সাত্ত্বিক পূজা সম্মান ২০২৬-এর বিশদ নিয়মাবলী জানতে অফিসিয়াল পিডিএফ ডাউনলোড করুন।
+                <p className="text-xs text-gray-400 mt-0.5">
+                  {t(
+                    "satvikPuja.rulesDesc",
+                    "বিশদ নিয়মাবলী জানতে অফিসিয়াল পিডিএফ ডাউনলোড করুন।"
+                  )}
                 </p>
               </div>
             </div>
@@ -125,37 +147,32 @@ const SatvikPujaBanner: React.FC<SatvikPujaBannerProps> = ({
               download="swattik_puja_sanman_rules_2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-2.5 rounded-xl bg-[#142952] hover:bg-[#1f3a70] text-white text-xs sm:text-sm font-semibold flex items-center gap-2 shadow-md hover:shadow-lg transition-all duration-300 shrink-0 group active:scale-95"
+              className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#931b2c] to-red-800 hover:from-[#7e1726] hover:to-[#7e1726] text-white text-xs sm:text-sm font-semibold flex items-center gap-2 shadow-lg hover:shadow-red-950/60 transition-all duration-300 shrink-0 group active:scale-95 border border-red-500/30"
             >
-              <Download size={16} className="group-hover:translate-y-0.5 transition-transform" />
-              <span>Download Rules PDF</span>
+              <Download
+                size={15}
+                className="group-hover:translate-y-0.5 transition-transform"
+              />
+              <span>{t("satvikPuja.downloadBtn", "Download Rules PDF")}</span>
             </a>
           </div>
 
-          {/* CTA Action Button */}
+          {/* CTA Button */}
           <Link
             to={registrationUrl}
-            className="w-full py-4 px-6 rounded-2xl bg-[#931b2c] hover:bg-[#7e1726] text-white font-medium text-sm sm:text-base shadow-xl shadow-[#931b2c]/25 hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3 group active:scale-[0.99]"
+            className="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-[#931b2c] via-red-800 to-[#931b2c] hover:from-[#7e1726] hover:to-[#7e1726] text-white font-heading tracking-[0.15em] text-xs sm:text-sm uppercase shadow-xl shadow-red-950/40 hover:shadow-2xl hover:shadow-red-900/50 transition-all duration-300 flex items-center justify-center gap-3 group active:scale-[0.99] border border-red-500/30"
           >
-            <span className="w-5 h-5 rounded flex items-center justify-center text-white/90">
-              📋
-            </span>
+            <span>📋</span>
             <span>{t("satvikPuja.buttonText", "Register Your Puja Club")}</span>
             <ArrowRight
-              size={18}
+              size={17}
               className="group-hover:translate-x-1.5 transition-transform"
             />
           </Link>
 
-          {/* Subtle subtext with pulsing arrow */}
-          <div className="mt-5 flex flex-col items-center justify-center gap-1.5 text-center">
-            <div className="w-6 h-6 rounded-full bg-black text-white flex items-center justify-center animate-bounce shadow-md">
-              <ArrowDown size={14} />
-            </div>
-            <p className="text-xs text-[#64748b] italic">
-              {t("satvikPuja.subtext", "Registration form opens on the next page")}
-            </p>
-          </div>
+          <p className="mt-5 text-xs text-gray-500 italic">
+            {t("satvikPuja.subtext", "Registration form opens on the next page")}
+          </p>
         </div>
       </motion.div>
     </section>

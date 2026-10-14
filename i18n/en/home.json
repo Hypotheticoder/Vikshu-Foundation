@@ -77,11 +77,17 @@
     "titleBengali": "সাত্ত্বিক পূজা সম্মান ২০২৬",
     "titleEnglish": "Satvik Puja Samman 2026",
     "sourceUrl": "panchangbodh.com",
-    "headline": "আপনার পূজা মণ্ডপকে নিবন্ধন করুন",
-    "description": "সাত্ত্বিকতা, শুদ্ধতা, শৃঙ্খলা ও সমাজসেবার উদযাপনে অংশ নিন। আপনার পূজা কমিটিকে সাত্তিক পূজা সম্মান ২০২৬-এর জন্য নিবন্ধন করুন।",
+    "headline": "Register Your Puja Pandal",
+    "description": "Celebrate purity, discipline, and community service. Register your Puja Committee for Satvik Puja Samman 2026.",
     "featureJudging": "Online & Offline Judging",
-    "featureRegistration": "Club Registration & Video Submission",
+    "featureRegistration": "Club Registration & Recognition",
+    "rulesTitle": "Rules & Guidelines",
+    "rulesDesc": "Download the official PDF to learn the complete rules and criteria.",
+    "downloadBtn": "Download Rules PDF",
     "buttonText": "Register Your Puja Club",
-    "subtext": "Registration form opens on the next page"
+    "subtext": "Registration form opens on the next page",
+    "backHome": "Back to Homepage",
+    "formLabel": "Registration Form",
+    "formDesc": "Quickly and easily register your Puja Pandal for Satvik Puja Samman 2026."
   }
 }
